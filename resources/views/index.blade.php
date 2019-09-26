@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Logistics &mdash; Colorlib Website Template</title>
+    <title>You &mdash; Colorlib Website Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -31,21 +31,21 @@
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
+        <!-- <div class="site-mobile-menu-close mt-3">
           <span class="icon-close2 js-menu-toggle"></span>
-        </div>
+        </div> -->
       </div>
-      <div class="site-mobile-menu-body"></div>
+      <!-- <div class="site-mobile-menu-body"></div> -->
     </div>
     
     <header class="site-navbar py-3" role="banner">
 
       <div class="container">
-        <div class="row align-items-center">
+        <div class="align-items-center" data-aos="fade-up" data-aos-delay="400" >
+           <h1 class="" ><a href="index.html">
+          <img src="{{asset('images/logo_terpilih.png')}}" style="height :100px; float: right;">
+            </a></h1>
           
-          <div class="col-11 col-xl-2">
-            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Logistics</a></h1>
-          </div>
           <!-- <div class="col-12 col-md-10 d-none d-xl-block"> -->
             <!-- <nav class="site-navigation position-relative text-right" role="navigation">
 
@@ -70,7 +70,10 @@
           <!-- </div> -->
 
 
-          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" 
+          style="position: relative; top: 3px;">
+          <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+          <span class="icon-menu h3"></span></a></div>
 
           </div>
 
@@ -81,15 +84,15 @@
 
   
 
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/background.png);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
-          <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-            
-
-            <h1 class="text-white font-weight-light mb-5 text-uppercase font-weight-bold">Worldwide Freight Services</h1>
-            <p><a href="#" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p>
+          <div class="" data-aos="fade-up" data-aos-delay="400">
+          <a href="index.html">
+          <img src="{{asset('images/logo_terpilih.png')}}" style="max-width :70%;">
+            </a>
+             <p><a href="#" class="btn btn-primary py-3 px-5 text-btn">Masuk Akun</a></p>
 
           </div>
         </div>
@@ -99,11 +102,11 @@
     <div class="container">
       <div class="row align-items-center no-gutters align-items-stretch overlap-section">
         <div class="col-md-4">
-          <div class="feature-1 pricing h-100 text-center">
+          <div class="feature-1 pricing h-100 text-center style=">
             <div class="icon">
               <span class="icon-dollar"></span>
             </div>
-            <h2 class="my-4 heading">Best Prices</h2>
+            <h2 class="my-4 heading" style="color: #343a40">Best Prices</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.</p>
           </div>
         </div>
@@ -112,15 +115,15 @@
             <h2 class="my-4 heading  text-center">Get Free Quote</h2>
             <form method="post">
               <div class="form-group">
-                <label for="fq_name">Name</label>
+                <label for="fq_name" style="color:white">Name</label>
                 <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Enter Name">
               </div>
               <div class="form-group mb-4">
-                <label for="fq_email">Email</label>
+                <label for="fq_email" style="color:white">Email</label>
                 <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Enter Email">
               </div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary text-white py-2 px-4 btn-block" value="Get Quote">  
+                <input type="submit" class="btn btn-primary text-btn py-2 px-4 btn-block" value="Get Quote">  
               </div>
             </form>
           </div>
@@ -130,7 +133,7 @@
             <div class="icon">
               <span class="icon-phone"></span>
             </div>
-            <h2 class="my-4 heading">24/7 Support</h2>
+            <h2 class="my-4 heading" style="color: #343a40">24/7 Support</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.</p>
           </div>
         </div>
@@ -513,7 +516,7 @@
   <script src="{{asset('js/jquery.countdown.min.js')}}"></script>
   <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
   <script src="{{asset('js/bootstrap-datepicker.min.js')}}"></script>
-  <script src="{{asset('js/aos.js')}}"></script>
+  <script src="{{asset('js/aos.js')}}" ></script>
 
   <script src="{{asset('js/main.js')}}"></script>
     
