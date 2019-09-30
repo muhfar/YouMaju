@@ -43,139 +43,74 @@
       <div class="container">
         <div class="align-items-center" data-aos="fade-up" data-aos-delay="400" >
            <h1 class="" ><a href="index.html">
-          <img src="{{asset('images/logo_terpilih.png')}}" style="height :100px; float: right;">
-            </a></h1>
-          
-          <!-- <div class="col-12 col-md-10 d-none d-xl-block"> -->
-            <!-- <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="has-children">
-                  <a href="services.html">Services</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Air Freight</a></li>
-                    <li><a href="#">Ocean Freight</a></li>
-                    <li><a href="#">Ground Shipping</a></li>
-                    <li><a href="#">Warehousing</a></li>
-                    <li><a href="#">Storage</a></li>
-                  </ul>
-                </li>
-                <li><a href="industries.html">Industries</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav> -->
-          <!-- </div> -->
-
-
-          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" 
-          style="position: relative; top: 3px;">
-          <a href="#" class="site-menu-toggle js-menu-toggle text-white">
-          <span class="icon-menu h3"></span></a></div>
-
-          </div>
-
-        </div>
-      </div>
-      
+          <img src="{{asset('images/logo_youmaju_1.png')}}" style="height :100px; float: right;">
+            </a></h1>           
     </header>
 
-  
-
+    
     <div class="site-blocks-cover overlay" style="background-image: url(images/background.png);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-
-          <div class="" data-aos="fade-up" data-aos-delay="400">
-          <a href="index.html">
-          <img src="{{asset('images/logo_terpilih.png')}}" style="max-width :70%;">
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+          <a href="index.html"> 
+          <img src="{{asset('images/logo_terpilih.png')}}" style="max-width :70%; margin-bottom: -40px;">
             </a>
-             <p><a href="#" class="btn btn-primary py-3 px-5 text-btn">Masuk Akun</a></p>
+            <h2 class="text-uppercase font-weight-bold" style="color : #f7f721; font-family: Verdana;">
+            Belajar
+            <img src="{{asset('images/logo_youmaju_2.png')}}"style="height :30px"> Berkoneksi
+            <img src="{{asset('images/logo_youmaju_2.png')}}"style="height :30px"> Berbagi
+          </h2>
+            <h6 class=" font-weight-bold"style="color : #f7f721">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h6>
+             <p><a href="#" class="btn btn-primary py-3 px-5 " style="margin-top: 50px;">Masuk Akun</a></p>
 
           </div>
         </div>
       </div>
     </div>  
 
-    <div class="container">
-      <div class="row align-items-center no-gutters align-items-stretch overlap-section">
-        <div class="col-md-4">
-          <div class="feature-1 pricing h-100 text-center style=">
-            <div class="icon">
-              <span class="icon-dollar"></span>
-            </div>
-            <h2 class="my-4 heading" style="color: #343a40">Best Prices</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="free-quote bg-dark h-100">
-            <h2 class="my-4 heading  text-center">Get Free Quote</h2>
-            <form method="post">
-              <div class="form-group">
-                <label for="fq_name" style="color:white">Name</label>
-                <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Enter Name">
-              </div>
-              <div class="form-group mb-4">
-                <label for="fq_email" style="color:white">Email</label>
-                <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Enter Email">
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary text-btn py-2 px-4 btn-block" value="Get Quote">  
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-3 pricing h-100 text-center">
-            <div class="icon">
-              <span class="icon-phone"></span>
-            </div>
-            <h2 class="my-4 heading" style="color: #343a40">24/7 Support</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="site-section">
       <div class="container">
+        
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="mb-0 text-primary">What We Offer</h2>
-            <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p>
+            <h2 class="mb-0" style="color:#3c3c32">YouMaju</h2>
+            <p class="color-black-opacity-5" style="color:#343a40">Apa Aja Sih yang YouMaju Tawarkan?</p>
           </div>
         </div>
         <div class="row align-items-stretch">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-travel"></span></div>
+              <div class="unit-4-icon mr-4"><span class="text-primary">
+              <img src="{{asset('images/connection.png')}}"style="height :100px">
+              </span></div>
               <div>
-                <h3>Air Freight</h3>
+                <h3>YouKoneksi</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p class="mb-0"><a href="#">Learn More</a></p>
+                <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-sea-ship-with-containers"></span></div>
+              <div class="unit-4-icon mr-4"><span class="text-primary">
+              <img src="{{asset('images/studying.png')}}"style="height :100px">
+              </span></div>
               <div>
-                <h3>Ocean Freight</h3>
+                <h3>YouBelajar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p class="mb-0"><a href="#">Learn More</a></p>
+                <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
+              <div class="unit-4-icon mr-4"><span class="text-primary">
+              <img src="{{asset('images/networking.png')}}"style="height :100px"> 
+              </span></div>
               <div>
-                <h3>Ground Shipping</h3>
+                <h3>YouBerbagi</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p class="mb-0"><a href="#">Learn More</a></p>
+                <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
           </div>
@@ -185,8 +120,8 @@
     </div>
   
 
-    <div class="site-section block-13">
-      <!-- <div class="container"></div> -->
+    <!-- <div class="site-section block-13">
+      <div class="container"></div>
 
 
       <div class="owl-carousel nonloop-block-13">
@@ -242,86 +177,8 @@
 
 
       </div>
-    </div>
+    </div> -->
 
-
-    
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary">More Services</h2>
-            <p class="color-black-opacity-5">We Offer The Following Services</p>
-          </div>
-        </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-travel"></span></div>
-              <div>
-                <h3>Air Air Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-sea-ship-with-containers"></span></div>
-              <div>
-                <h3>Ocean Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
-              <div>
-                <h3>Ground Shipping</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-barn"></span></div>
-              <div>
-                <h3>Warehousing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-platform"></span></div>
-              <div>
-                <h3>Storage</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-car"></span></div>
-              <div>
-                <h3>Delivery Van</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
 
     <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
       <div class="container">
@@ -329,14 +186,14 @@
 
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
             <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
-            <h2 class="text-white font-weight-light mb-5 h1">View Our Services By Watching This Short Video</h2>
+            <h2 class="text-white font-weight-light mb-5 h1">View Our Services by Watching This Short Video</h2>
             
           </div>
         </div>
       </div>
     </div>  
     
-    <div class="site-section border-bottom">
+    <!-- <div class="site-section border-bottom">
       <div class="container">
 
         <div class="row justify-content-center mb-5">
@@ -395,31 +252,26 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="site-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary">Our Blog</h2>
-            <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p>
-          </div>
-        </div>
+         
         <div class="row mb-3 align-items-stretch">
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="{{asset('images/blog_1.jpg')}}" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+          <div class="unit-4-icon mr-4">
+              <img src="{{asset('images/logo_youmaju_2.png')}}" style="height :350px; margin-left:25%"alt="Image" class="img-fluid">
+              
             </div> 
           </div>
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="{{asset('images/blog_2.jpg')}}" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            <div class="h-entry" style="margin-top: 30px; margin-right: 40px; font-size: 20px;">
+             <p>YouMaju memberikan kemudahan pada youtuber pemula sebagai media pembelajaran, 
+               koneksi dan berbagi cerita. YouMaju memberikan keuntungan yang didapatkan youtuber 
+               dan viewer perihal berbagi cerita, yakni youtuber mendaptkan pengahsilan dari karyanya , 
+               dan viewer mendapatkan point, point tersebut dapat ditukarkan dengan penawaran terbaik. 
+               YouMaju untuk Belajar dan Cari koneksi anda dan temukan peluang berbagi ceritamu!</p>
             </div>
           </div>
         </div>
@@ -431,7 +283,7 @@
         <div class="row text-center">
           <div class="col-md-12">
             <h2 class="mb-5 text-black">Try Our Services</h2>
-            <p class="mb-0"><a href="booking.html" class="btn btn-primary py-3 px-5 text-white">Get Started</a></p>
+            <p class="mb-0"><a href="booking.html" class="btn btn-primary py-3 px-5">Masuk</a></p>
           </div>
         </div>
       </div>
@@ -443,13 +295,12 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <h2 class="footer-heading mb-4">Tentang YouMaju</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
+                  <li><a href="#">Tentang Kami</a></li>
+                  <li><a href="#">Bantuan</a></li>
+                  <li><a href="#">Kontak Kami</a></li>
+                  </ul>
               </div>
               <div class="col-md-3">
                 <h2 class="footer-heading mb-4">Products</h2>
@@ -479,15 +330,8 @@
             </div>
           </div>
           <div class="col-md-3">
-            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-            <form action="#" method="post">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
-                </div>
-              </div>
-            </form>
+            <h2 class="footer-heading mb-4"></h2>
+            
           </div>
         </div>
         <div class="row pt-5 mt-5 text-center">
