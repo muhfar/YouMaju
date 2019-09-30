@@ -48,7 +48,10 @@
     </header>
 
     
-    <div class="site-blocks-cover overlay" style="background-image: url(images/background.png);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" data-aos="fade" data-stellar-background-ratio="0.5">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
@@ -61,7 +64,7 @@
             <img src="{{asset('images/logo_youmaju_2.png')}}"style="height :30px"> Berbagi
           </h2>
             <h6 class=" font-weight-bold"style="color : #f7f721">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h6>
-             <p><a href="{{ url('/redirect') }}" class="btn btn-primary py-3 px-5 " style="margin-top: 50px;">Masuk Akun</a></p>
+             <p><a href="{{ url('/redirect') }}" class="btn btn-primary py-3 px-5 font-weight-bold" style="margin-top: 50px;">AYO MASUK</a></p>
 
           </div>
         </div>
@@ -288,7 +291,7 @@
         </div>
       </div>
     </div>
-    
+</div>
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -348,7 +351,7 @@
         </div>
       </div>
     </footer>
-  </div>
+  
 
   <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
   <script src="{{asset('js/jquery-migrate-3.0.1.min.js')}}"></script>
