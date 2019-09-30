@@ -283,7 +283,7 @@
         <div class="row text-center">
           <div class="col-md-12">
             <h2 class="mb-5 text-black">Try Our Services</h2>
-            <p class="mb-0"><a href="booking.html" class="btn btn-primary py-3 px-5">Masuk</a></p>
+            <p class="mb-0"><a href="{{ url('/redirect') }}" class="btn btn-primary py-3 px-5">Masuk</a></p>
           </div>
         </div>
       </div>
