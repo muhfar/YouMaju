@@ -1990,7 +1990,7 @@ textarea.form-control {
   .btn.disabled, .btn:disabled {
     opacity: 0.65; }
   .btn:not(:disabled):not(.disabled) {
-    cursor: pointer; }
+    cursor: pointer;}
 
 a.btn.disabled,
 fieldset:disabled a.btn {
@@ -6237,7 +6237,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important; }
+  margin-bottom: 1rem !important; }
 
 .ml-5,
 .mx-5 {
@@ -7193,10 +7193,10 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #f89d13 !important; }
+  color: #f89d13!important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #d28106 !important; }
+  color: #f7f721 !important; }
 
 .text-secondary {
   color: #6c757d !important; }
