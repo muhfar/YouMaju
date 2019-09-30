@@ -2,6 +2,43 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
+/* profile */
+.profile img{
+  height :150px; 
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.nav-tabs>li>a{
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  font-size: 15px;
+  color:#555 ;
+}
+.h-entry a{
+  color: #25262a;
+}
+.h-entry a:hover{
+  color: #b3be0e;
+}
+.nav-tabs{
+  border-bottom:1px solid #b3be0e;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #b3be0e;
+    border-bottom-color: transparent;
+}
+.nav-tabs>li>a{
+  margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-size: 15px;
+}
 /* Base */
 body {
   line-height: 1.7;
@@ -1355,7 +1392,7 @@ font-weight: 200; }
     border-radius: 50%; }
 
 .breadcrumb-custom {
-  font-size: 1rem !important; }
+  font-size: 15px !important; }
 
 .text-muted {
   color: #ccc !important;
