@@ -61,7 +61,7 @@
             <img src="{{asset('images/logo_youmaju_2.png')}}"style="height :30px"> Berbagi
           </h2>
             <h6 class=" font-weight-bold"style="color : #f7f721">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h6>
-             <p><a href="#" class="btn btn-primary py-3 px-5 " style="margin-top: 50px;">Masuk Akun</a></p>
+             <p><a href="{{ url('/redirect') }}" class="btn btn-primary py-3 px-5 " style="margin-top: 50px;">Masuk Akun</a></p>
 
           </div>
         </div>
