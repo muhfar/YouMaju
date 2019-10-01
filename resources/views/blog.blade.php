@@ -21,7 +21,7 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
 
 
     <link rel="stylesheet" href="css/aos.css">
@@ -96,10 +96,57 @@
           <img src="{{asset('images/person_1.jpg')}}">
             <h2 class="text-white font-weight-light font-weight-bold">Cristine</h2>
             <p class="breadcrumb-custom"><a>17jt</a><a> Subscriber</a></p>
+            <p><button href="#" class="btn btn-primary py-3 px-5" 
+             style="margin-top: 50px;" data-toggle="modal" data-target="#modalLoginAvatar" >Pengaturan</button></p>
+
+                
+             
           </div>
         </div>
       </div>
-    </div>  
+    </div> 
+
+    <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header">
+        <img src="{{asset('images/person_1.jpg')}}" alt="avatar" class="rounded-circle img-responsive">       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="false">&times;</span>   
+         
+      </div>
+      <!--Body-->
+      <div class="modal-body mb-1">
+
+        <h5 class="mt-1 mb-2">Cristine</h5>
+         <div class="col">
+            <div class="form-group">
+              <label>Username</label>
+               <input class="form-control" type="text" name="username" placeholder="johnny.s" value="johnny.s">
+             </div>
+            </div>
+       
+        
+           <div class="col">
+            <div class="form-group">
+             <label>Email</label>
+               <input class="form-control" type="text" placeholder="user@example.com">
+             </div>
+             </div>
+           </div>        
+        <div class="text-center mt-4">
+          <button class="btn btn-cyan mt-1">Login <i class="fas fa-sign-in ml-1"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
 
     
   
@@ -325,6 +372,11 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-    
+
+  <!-- <script>
+    $('#orangeModalSubscription').modal('hide');
+$('body').removeClass('modal-open');
+$('.modal-backdrop').remove();
+  </script> -->
   </body>
 </html>
