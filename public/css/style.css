@@ -1,9 +1,52 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+/* profile */
+.profile img{
+  height :150px; 
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.nav-tabs>li>a{
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  font-size: 15px;
+  color:#555 ;
+}
+.h-entry a{
+  color: #25262a;
+}
+.h-entry a:hover{
+  color: #b3be0e;
+}
+.nav-tabs{
+  border-bottom:1px solid #b3be0e;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #b3be0e;
+    border-bottom-color: transparent;
+}
+.nav-tabs>li>a{
+  margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-size: 15px;
+}
 /* Base */
 body {
   line-height: 1.7;
   color: #4d4d4d;
   font-weight: 300;
-  font-size: 1rem; }
+  font-size: 1rem; 
+  font-family: 'Lato', sans-serif;
+}
 
 ::-moz-selection {
   background: #000;
@@ -17,7 +60,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; 
-  font-family: Roboto;
+  font-family: 'Lato', sans-serif;
 }
   a:hover {
     text-decoration: none; }
@@ -61,6 +104,20 @@ h1, h2, h3, h4, h5,
   bottom: 0;
   opacity: 0;
   visibility: hidden; }
+  .overlay video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
 
 .offcanvas-menu .site-wrap {
   position: absolute;
@@ -76,6 +133,7 @@ h1, h2, h3, h4, h5,
   text-transform: uppercase;
   letter-spacing: .2em;
   border-radius: 0;
+  font-family: Arial, Helvetica, sans-serif;
 font-weight: 200; }
   .btn:hover, .btn:active, .btn:focus {
     outline: none;
@@ -1334,7 +1392,7 @@ font-weight: 200; }
     border-radius: 50%; }
 
 .breadcrumb-custom {
-  font-size: 1rem !important; }
+  font-size: 15px !important; }
 
 .text-muted {
   color: #ccc !important;

@@ -1,0 +1,20 @@
+.navbar-brand{
+	margin-left: 30px;
+}
+p{
+	margin-bottom: .5rem;
+}
+.profile-sec{
+	background-color: #555555;
+	height: 500px;
+}
+
+.timeline{
+	background-color: #333333;
+	height: 500px;
+}
+
+.recommend-sec{
+	background-color: #555555;
+	height: 500px;
+}

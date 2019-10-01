@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/home', 'home@index');
+
+Route::get('/redirect', 'login@redirect');
+Route::get('/callback', 'login@callback');
