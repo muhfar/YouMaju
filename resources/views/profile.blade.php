@@ -76,13 +76,13 @@
           </div> -->
 
 
-          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+          <!-- <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
           <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
           </div>
 
         </div>
-      </div>
+      </div> -->
       
     </header>
 
@@ -121,25 +121,37 @@
       </div>
       <!--Body-->
       <div class="modal-body mb-1">
-
-        <h5 class="mt-1 mb-2">Cristine</h5>
-         <div class="col">
+          <div class="col">
             <div class="form-group">
-              <label>Username</label>
-               <input class="form-control" type="text" name="username" placeholder="johnny.s" value="johnny.s">
+              <h5><label>Nama</label></h5>
+               <input class="form-control" type="text" name="username" placeholder="Cristine" value="Cristine">
              </div>
             </div>
-       
-        
+               
            <div class="col">
             <div class="form-group">
-             <label>Email</label>
+             <h5><label>Email</label><h5>
                <input class="form-control" type="text" placeholder="user@example.com">
              </div>
              </div>
-           </div>        
+
+             <div class="col">
+              <div class="form-group">
+               <h5><label>Tanggal Lahir</label><h5>
+               <input class="form-control" type="date" name="bday">
+             </div>
+             </div>
+
+             <div class="col">
+              <div class="form-group">
+               <h5><label>Jenis Kelamin</label><h5>
+               <input class="form-control" type="text" placeholder="P/L">
+             </div>
+             </div>
+           </div>     
+      
         <div class="text-center mt-4">
-          <button class="btn btn-cyan mt-1">Login <i class="fas fa-sign-in ml-1"></i></button>
+          <button class="btn btn-primary py-3 px-5" style="margin-bottom: 20px; margin-top:-20px;">Simpan</button>
         </div>
       </div>
 
