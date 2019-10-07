@@ -29,22 +29,12 @@
   
   <div class="site-wrap">
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <!-- <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div> -->
-      </div>
-      <!-- <div class="site-mobile-menu-body"></div> -->
-    </div>
-    
     <header class="site-navbar py-3" role="banner">
 
-      <div class="container">
+      <div class="container gambaricon">
         <div class="align-items-center" data-aos="fade-up" data-aos-delay="400" >
-           <h1 class="" ><a href="index.html">
-          <img src="{{asset('images/logo_youmaju_1.png')}}" style="height :100px; float: right;">
-            </a></h1>           
+         <a href="#"> <img src="{{asset('images/logo_youmaju_1.png')}}">
+                  
     </header>
 
     
@@ -54,18 +44,19 @@
   </video>
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-          <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-8">
           <a href="index.html"> 
-          <img src="{{asset('images/logo_terpilih.png')}}" style="max-width :70%; margin-bottom: -40px;">
+          <img src="{{asset('images/logo_terpilih.png')}}" >
             </a>
+            <div class="banner">
             <h2 class="text-uppercase font-weight-bold" style="color : #f7f721; font-family: Verdana;">
             Belajar
-            <img src="{{asset('images/logo_youmaju_2.png')}}"style="height :30px"> Berkoneksi
-            <img src="{{asset('images/logo_youmaju_2.png')}}"style="height :30px"> Berbagi
+            <img src="{{asset('images/logo_youmaju_2.png')}}"> Berkoneksi
+            <img src="{{asset('images/logo_youmaju_2.png')}}"> Berbagi
           </h2>
             <h6 class=" font-weight-bold"style="color : #f7f721">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h6>
-             <p><a href="{{ url('/redirect') }}" class="btn btn-primary py-3 px-5 font-weight-bold" style="margin-top: 50px;">AYO MASUK</a></p>
-
+             <a href="{{ url('/redirect') }}" class="btn btn-primary font-weight-bold">AYO MASUK</a>
+        </div>
           </div>
         </div>
       </div>
@@ -264,7 +255,7 @@
         <div class="row mb-3 align-items-stretch">
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
           <div class="unit-4-icon mr-4">
-              <img src="{{asset('images/logo_youmaju_2.png')}}" style="height :350px; margin-left:25%"alt="Image" class="img-fluid">
+              <img src="{{asset('images/logo_youmaju_2.png')}}" alt="Image" class="img-fluid">
               
             </div> 
           </div>
