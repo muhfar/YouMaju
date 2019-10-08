@@ -28,7 +28,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex justify-content-center">
+
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -163,6 +164,7 @@
           <div class="right-subscribe col-sm-3 d-flex justify-content-around offset-5 align-items-center">
             <div class="subscribe btn btn-outline-secondary">
               <a href="#">Subscribe</a>
+
             </div>
             <i class="fa fa-bell" aria-hidden="true"></i>
           </div>
