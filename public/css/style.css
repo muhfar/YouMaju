@@ -55,21 +55,23 @@
   height: 150px;
   margin-left: 23%;
 }.gambaricon img{
-height :100px; float: right;}
+  margin-top: 10px;
+height :70px; float: right;}
 
 /* landig page */
-.banner img{
+.col-md-8 .banner img{
 height: 30px;
-margin-top: -40px;
+margin-top: -30px;
 }
 .unit-4-icon img{
-    height :350px; margin-left:25%;
+    height :350px;
 }
 .btn.btn-primary{
 margin-top: 30px;
 }
 .col-md-8 img{
-  max-width :70%; margin-bottom: -40px;
+  margin-top: -150px;
+  max-width :70%; margin-bottom: -30px;
 }
 
 @media (max-width: 991.98px){
