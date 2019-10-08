@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
 // Route::get('/', function () {
-//     return view('profile');
+//     return view('index');
 // });
+
+Route::get('/', function () {
+    return view('profile');
+});
 
 Route::get('/home', 'home@index');
 

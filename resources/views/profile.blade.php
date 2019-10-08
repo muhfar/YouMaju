@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -46,58 +49,28 @@
 
       <div class="container">
         <div class="row align-items-center">
-          
           <div class="col-11 col-xl-2">
           <h1 class="" ><a href="index.html">
-          <img src="{{asset('images/logo_youmaju_1.png')}}" style="height :100px;">
+          <img src="{{asset('images/fav_icon_you_maju_YB.png')}}">
             </a></h1>   
-          </div>
-          <!-- <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="has-children">
-                  <a href="services.html">Services</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Air Freight</a></li>
-                    <li><a href="#">Ocean Freight</a></li>
-                    <li><a href="#">Ground Shipping</a></li>
-                    <li><a href="#">Warehousing</a></li>
-                    <li><a href="#">Storage</a></li>
-                  </ul>
-                </li>
-                <li><a href="industries.html">Industries</a></li>
-                <li class="active"><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div> -->
-
-
-          <!-- <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
-          <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-          </div>
-
-        </div>
-      </div> -->
-      
+          </div>      
     </header>
 
   
 
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/ilustrator.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/good.gif);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-
-          <div class="profile col-md-8" data-aos="fade-up" data-aos-delay="400">
+          
+          <div class="profile" data-aos="fade-up" data-aos-delay="400">
           <img src="{{asset('images/person_1.jpg')}}">
-            <h2 class="text-white font-weight-light font-weight-bold">Cristine</h2>
+          <div>
+            <h2 class="text-white font-weight-light font-weight-bold">Cristine 
+                      <a href="#"> <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#modalLoginAvatar"></i></a>
+                      </h2>
+          </div>
             <p class="breadcrumb-custom"><a>17jt</a><a> Subscriber</a></p>
-            <p><button href="#" class="btn btn-primary py-3 px-5" 
-             style="margin-top: 50px;" data-toggle="modal" data-target="#modalLoginAvatar" >Pengaturan</button></p>
+            
 
                 
              

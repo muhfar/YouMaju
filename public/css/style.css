@@ -3,10 +3,22 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
 /* profile */
+.fa {
+  color: #f89d13;
+}
+.col-11{
+  margin-left: 1000px;
+}
+.col-11 img{
+  height :70px;}
+
 .profile img{
   height :150px; 
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-top: 60px;
+}
+.profile h2{
+  margin-top: 30px;
 }
 .nav-tabs>li>a{
   margin-right: 2px;
@@ -130,18 +142,6 @@ margin-top: 30px;
   }
 }
 
-/* tambahan
-@media (min-width: 370px) {
-.gambaricon img{
-  height: 60px;
-} 
-.col-md-8 h2{
-  font-size: 15px;
-}
-.col-md-8 h6{
-  font-size: 10px;
-}
-} */
 
 /* Base */
 body {
