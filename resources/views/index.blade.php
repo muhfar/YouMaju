@@ -38,10 +38,10 @@
     </header>
 
     
-    <div class="site-blocks-cover overlay" data-aos="fade" data-stellar-background-ratio="0.5">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-  </video>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/teaser_ep_4.gif);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"> -->
+    <!-- <img src="{{asset('images/safe_image.gif')}}" type="image" > -->
+  <!-- </video> -->
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-md-8">
