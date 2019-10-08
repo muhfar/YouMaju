@@ -33,7 +33,7 @@
 
       <div class="container gambaricon">
         <div class="align-items-center" data-aos="fade-up" data-aos-delay="400" >
-         <a href="#"> <img src="{{asset('images/fav_icon_logo_you_maju.png')}}">
+         <a href="#"> <img src="{{asset('images/fav_icon_you_maju_YB.png')}}">
                   
     </header>
 
