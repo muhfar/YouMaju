@@ -28,6 +28,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
+
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -161,18 +162,34 @@
             </div>
           </div>
           <div class="right-subscribe col-sm-3 d-flex justify-content-around offset-5 align-items-center">
-            <div class="subscribe">
-              <button><a href="#">Subscribe</a></button>
+            <div class="subscribe btn btn-outline-secondary">
+              <a href="#">Subscribe</a>
+
             </div>
             <i class="fa fa-bell" aria-hidden="true"></i>
           </div>
         </div>
+        <!--  add comment -->
+        <hr>
+        <div class="row">
+          <div class="col-sm-1">
+            <div class="com-container">
+              <div class="hero-img">
+                <img src="../images/person_3.jpg" alt="" class="img">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia iure cumque perspiciatis aperiam veniam, vel, ullam alias, aut vitae nulla voluptatibus dolor asperiores sit. Magnam culpa veritatis ullam maxime sapiente, similique illum itaque delectus! Explicabo est similique aut qui cum doloremque et, consectetur id nihil ut autem, nam suscipit possimus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end add comment -->
       </div>
+      <hr>
       <!-- end main content -->
-      <div class="sidebar col-sm-3">
 
-      </div>
+
+
     </div>
+  </div>
   </div>
 </body>
 
