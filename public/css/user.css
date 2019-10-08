@@ -1,20 +1,57 @@
-.navbar-brand{
-	margin-left: 30px;
-}
-p{
-	margin-bottom: .5rem;
-}
-.profile-sec{
-	background-color: #555555;
-	height: 500px;
+.navbar-brand {
+    margin-left: 30px;
 }
 
-.timeline{
-	background-color: #333333;
-	height: 500px;
+p {
+    margin-bottom: .5rem;
 }
 
-.recommend-sec{
-	background-color: #555555;
-	height: 500px;
+.profile-sec {
+    background-color: #555555;
+    height: 500px;
+}
+
+.timeline {
+    background-color: #333333;
+    height: 500px;
+}
+
+.recommend-sec {
+    background-color: #555555;
+    height: 500px;
+}
+
+nav img {
+    height: 50px;
+}
+
+.navbar-side ul {
+    list-style: none;
+}
+
+.navbar-side ul li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.hero-img .img {
+    height: 50px;
+    border-radius: 50px;
+}
+
+.vid-details ul {
+    list-style: none;
+}
+
+.owner-detail .name h6 {
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.owner-detail {
+    padding-left: 20px;
 }
