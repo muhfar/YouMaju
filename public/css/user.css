@@ -1,20 +1,123 @@
+body{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+.home{
+	width: 100%;
+}
 .navbar-brand{
 	margin-left: 30px;
 }
-p{
-	margin-bottom: .5rem;
-}
+
 .profile-sec{
-	background-color: #555555;
-	height: 500px;
+	background-color: #1a1a1a;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+.profile-sec p{
+	margin-bottom: .5rem;
+	color: #f7f721;
+	/*color: #ffffff;*/
+}
+
+.profile-sec a{
+	width: 300px;
+	text-align: left;
+	padding-left: 50px;
+}
+
+.profile-sec hr,
+.recommend-sec hr{
+	width: 70%;
+	background-color: #f7f721;
+}
+
+.user-menu-sec{
+	/*margin-left: 50px;
+	margin-right: 50px;*/
+}
+.user-menu-item{
+	margin-bottom: 5px;
+}
+
+.user-menu-item span{
+	color: #f7f721;
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 18px;
+}
+
+.user-menu-item a,
+.timeline .content .user-thumbnails a,
+.recommend-user .content a
+{
+	text-decoration: none;
 }
 
 .timeline{
-	background-color: #333333;
-	height: 500px;
+	display: inline-block;
+}
+
+.timeline .content .user-thumbnails{
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.timeline .content .user-thumbnails h4{
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.timeline .content .video iframe{
+	width: 560px;
+	height: 310px;
+	padding-bottom: 20px;
+}
+
+.timeline .content{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(110,110,110,1);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(110,110,110,1);
+	box-shadow: 0px 0px 10px 1px rgba(110,110,110,1);
 }
 
 .recommend-sec{
-	background-color: #555555;
-	height: 500px;
+	background-color: #1a1a1a;
+	display: inline-block;
+}
+
+.recommend-user .content{
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+
+}
+
+.recommend-user .content .user-img,
+.recommend-user .content .user-id
+{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	
+}
+
+.recommend-user .content .user-id{
+	width: 140px;
+}
+
+.recommend-user .content .user-id p{
+	margin-top: 0;
+	margin-bottom: 0;
 }
