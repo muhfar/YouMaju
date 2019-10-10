@@ -39,9 +39,6 @@
 
     
     <div class="site-blocks-cover overlay" style="background-image: url(images/teaser_ep_4.gif);" data-aos="fade" data-stellar-background-ratio="0.5">
-    <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"> -->
-    <!-- <img src="{{asset('images/safe_image.gif')}}" type="image" > -->
-  <!-- </video> -->
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-md-8">
@@ -196,7 +193,7 @@
         <!-- <div class="row mb-3 align-items-stretch"> -->
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
           <div class="unit-4-icon mr-4">
-              <img src="{{asset('images/logo_youmaju_2.png')}}" alt="Image" class="img-fluid">
+              <img src="{{asset('images/fav_icon_you_maju_YB.png')}}" alt="Image" class="img-fluid">
               
             </div> 
           </div>
@@ -266,11 +263,20 @@
             </div>
           </a>
         </div>
-
-
-      </div>
+     </div>
     </div>
     
+    <div class="site-section border-top">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h4 class="mb-5 text-black">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h4>
+            <p class="mb-0"><a href="booking.html" class="btn btn-primary py-3 px-5 text-white">Klik Disini</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </div>
     <footer class="site-footer">
       <div class="container">
