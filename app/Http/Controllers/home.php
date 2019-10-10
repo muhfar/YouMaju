@@ -19,4 +19,8 @@ class home extends Controller
     					);
     	return view('home', $data);
     }
+
+    public function content_detail(){
+        return view('content_detail');
+    }
 }

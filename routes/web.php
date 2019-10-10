@@ -21,5 +21,7 @@ Route::get('/', function () {
 
 Route::get('/home', 'home@index');
 
+Route::get('/home/content-detail', 'home@content_detail');
+
 Route::get('/redirect', 'login@redirect');
 Route::get('/callback', 'login@callback');
