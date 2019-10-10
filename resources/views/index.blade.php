@@ -29,43 +29,34 @@
   
   <div class="site-wrap">
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <!-- <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div> -->
-      </div>
-      <!-- <div class="site-mobile-menu-body"></div> -->
-    </div>
-    
     <header class="site-navbar py-3" role="banner">
 
-      <div class="container">
+      <div class="container gambaricon">
         <div class="align-items-center" data-aos="fade-up" data-aos-delay="400" >
-           <h1 class="" ><a href="index.html">
-          <img src="{{asset('images/logo_youmaju_1.png')}}" style="height :100px; float: right;">
-            </a></h1>           
+         <a href="#"> <img src="{{asset('images/fav_icon_you_maju_YB.png')}}">
+                  
     </header>
 
     
-    <div class="site-blocks-cover overlay" data-aos="fade" data-stellar-background-ratio="0.5">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-  </video>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/teaser_ep_4.gif);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"> -->
+    <!-- <img src="{{asset('images/safe_image.gif')}}" type="image" > -->
+  <!-- </video> -->
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-          <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-8">
           <a href="index.html"> 
-          <img src="{{asset('images/logo_terpilih.png')}}" style="max-width :70%; margin-bottom: -40px;">
+          <img src="{{asset('images/youMaju_polos2.png')}}" >
             </a>
+            <div class="banner">
             <h2 class="text-uppercase font-weight-bold" style="color : #f7f721; font-family: Verdana;">
             Belajar
-            <img src="{{asset('images/logo_youmaju_2.png')}}"style="height :30px"> Berkoneksi
-            <img src="{{asset('images/logo_youmaju_2.png')}}"style="height :30px"> Berbagi
+            <img src="{{asset('images/logo_youmaju_2.png')}}"> Berkoneksi
+            <img src="{{asset('images/logo_youmaju_2.png')}}"> Berbagi
           </h2>
             <h6 class=" font-weight-bold"style="color : #f7f721">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h6>
-             <p><a href="{{ url('/redirect') }}" class="btn btn-primary py-3 px-5 font-weight-bold" style="margin-top: 50px;">AYO MASUK</a></p>
-
+             <a href="{{ url('/redirect') }}" class="btn btn-primary font-weight-bold">AYO MASUK</a>
+        </div>
           </div>
         </div>
       </div>
@@ -88,7 +79,7 @@
               </span></div>
               <div>
                 <h3>YouKoneksi</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p align="justify">Youmaju merupakan salah satu media yang dapat digunakan sebagai pencarian koneksi...</p>
                 <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
@@ -100,7 +91,7 @@
               </span></div>
               <div>
                 <h3>YouBelajar</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p align="justify">Youtube merupakan salah satu media yang sangat dicari dan digemari oleh setiap orang...</p>
                 <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
@@ -112,7 +103,7 @@
               </span></div>
               <div>
                 <h3>YouBerbagi</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p align="justify">Berbagi cerita adalah hal termudah yang dapat dilakukan setiap orang, setelah anda...</p>
                 <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
@@ -122,65 +113,6 @@
       </div>
     </div>
   
-
-    <!-- <div class="site-section block-13">
-      <div class="container"></div>
-
-
-      <div class="owl-carousel nonloop-block-13">
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="{{asset('images/img_1.jpg')}}" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Storage</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="{{asset('images/img_2.jpg')}}" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Air Transports</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="{{asset('images/img_3.jpg')}}" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Cargo Transports</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="{{asset('images/img_4.jpg')}}" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Cargo Ship</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-        <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="{{asset('images/img_5.jpg')}}" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Ware Housing</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
-            </div>
-          </a>
-        </div>
-
-
-      </div>
-    </div> -->
 
 
     <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
@@ -264,7 +196,7 @@
         <div class="row mb-3 align-items-stretch">
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
           <div class="unit-4-icon mr-4">
-              <img src="{{asset('images/logo_youmaju_2.png')}}" style="height :350px; margin-left:25%"alt="Image" class="img-fluid">
+              <img src="{{asset('images/logo_youmaju_2.png')}}" alt="Image" class="img-fluid">
               
             </div> 
           </div>
@@ -280,17 +212,65 @@
         </div>
       </div>
     </div>
-    
-    <div class="site-section border-top">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-12">
-            <h2 class="mb-5 text-black">Try Our Services</h2>
-            <p class="mb-0"><a href="https://accounts.google.com/logout" class="btn btn-primary py-3 px-5">Masuk</a></p>
-          </div>
+    <div class="site-section block-13">
+      <div class="container"></div>
+
+
+      <div class="owl-carousel nonloop-block-13">
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="{{asset('images/img_1.jpg')}}" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Storage</h3>
+              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+            </div>
+          </a>
         </div>
+
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="{{asset('images/img_2.jpg')}}" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Air Transports</h3>
+              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="{{asset('images/img_3.jpg')}}" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Cargo Transports</h3>
+              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="{{asset('images/img_4.jpg')}}" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Cargo Ship</h3>
+              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="unit-1 text-center">
+            <img src="{{asset('images/img_5.jpg')}}" alt="Image" class="img-fluid">
+            <div class="unit-1-text">
+              <h3 class="unit-1-heading">Ware Housing</h3>
+              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+            </div>
+          </a>
+        </div>
+
+
       </div>
     </div>
+    
 </div>
     <footer class="site-footer">
       <div class="container">
@@ -306,24 +286,6 @@
                   </ul>
               </div>
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Products</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Features</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
                 <h2 class="footer-heading mb-4">Follow Us</h2>
                 <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
@@ -337,16 +299,6 @@
             
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            </div>
-          </div>
           
         </div>
       </div>

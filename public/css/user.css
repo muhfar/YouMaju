@@ -3,11 +3,6 @@ body{
 	width: 100%;
 }
 
-
-
-.home{
-	width: 100%;
-}
 .navbar-brand{
 	margin-left: 30px;
 }
@@ -120,4 +115,39 @@ body{
 .recommend-user .content .user-id p{
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+nav img {
+    height: 50px;
+}
+
+.navbar-side ul {
+    list-style: none;
+}
+
+.navbar-side ul li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.hero-img .img {
+    height: 50px;
+    border-radius: 50px;
+}
+
+.vid-details ul {
+    list-style: none;
+}
+
+.owner-detail .name h6 {
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.owner-detail {
+    padding-left: 20px;
 }
