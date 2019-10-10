@@ -121,7 +121,7 @@
 
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
             <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
-            <h2 class="text-white font-weight-light mb-5 h1">View Our Services by Watching This Short Video</h2>
+            <h2 class="text-white font-weight-light mb-5 h1">Klik dan Cek YouMaju Disini Sekarang!</h2>
             
           </div>
         </div>
@@ -193,7 +193,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
          
-        <div class="row mb-3 align-items-stretch">
+        <!-- <div class="row mb-3 align-items-stretch"> -->
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
           <div class="unit-4-icon mr-4">
               <img src="{{asset('images/logo_youmaju_2.png')}}" alt="Image" class="img-fluid">
@@ -201,7 +201,7 @@
             </div> 
           </div>
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry" style="margin-top: 30px; margin-right: 40px; font-size: 20px;">
+            <div class="h-entry" >
              <p>YouMaju memberikan kemudahan pada youtuber pemula sebagai media pembelajaran, 
                koneksi dan berbagi cerita. YouMaju memberikan keuntungan yang didapatkan youtuber 
                dan viewer perihal berbagi cerita, yakni youtuber mendaptkan pengahsilan dari karyanya , 
@@ -210,7 +210,7 @@
             </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
     <div class="site-section block-13">
       <div class="container"></div>
