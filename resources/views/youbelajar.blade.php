@@ -46,7 +46,7 @@
           </div>
         </div>
 
-        <div style="color:#343a40; font-size:20px;" >
+        <div class="paragraftentang"style="color:#343a40; font-size:20px;" >
                 <p align="justify">Setiap orang tentunya sudah tidak asing lagi dengan youtube. Youtube merupakan salah satu media yang 
                     sangat dicari dan digemari oleh setiap orang. Banyak yang beranggapan bahwa youtube adalah salah satu media penghasil 
                     uang tercepat dan termudah, namun youtuber sendiri tidak mengetahui bagaimana cara mendapatkan dan mengoptimalkan 
@@ -56,8 +56,8 @@
            <ul> 3.	Sambungkan akun youtube anda ke AdSense.</ul>
            <ul> 4.	Lakukan Conversion Rate ke Product Page.</ul>
            <ul> 5.	Kemudian anda juga harus memperhatikan isi konten youtube chanel yang anda buat.</ul>
-                    Untuk lebih lengkapnya lagi mengenai tips, trik dan video tutorialnya cari di situs Youmaju, pada YouMaju berisikan 
-                    tahapan-tahapan menjadikan youtuber profesional secara lengkap.</p>
+                   <p> Untuk lebih lengkapnya lagi mengenai tips, trik dan video tutorialnya cari di situs Youmaju, pada YouMaju berisikan 
+                    tahapan-tahapan menjadikan youtuber profesional secara lengkap.</p></p>
             </div>
         </div>
     </div> 
