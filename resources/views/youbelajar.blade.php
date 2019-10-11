@@ -46,7 +46,7 @@
           </div>
         </div>
 
-        <div class="paragraftentang"style="color:#343a40; font-size:20px;" >
+       <div class="paragraftentang"style="color:#343a40; font-size:20px;" >
                 <p align="justify">Setiap orang tentunya sudah tidak asing lagi dengan youtube. Youtube merupakan salah satu media yang 
                     sangat dicari dan digemari oleh setiap orang. Banyak yang beranggapan bahwa youtube adalah salah satu media penghasil 
                     uang tercepat dan termudah, namun youtuber sendiri tidak mengetahui bagaimana cara mendapatkan dan mengoptimalkan 
