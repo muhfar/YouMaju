@@ -11,13 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
 Route::get('/', function () {
     return view('profile');
 });
+
+// Route::get('/', function () {
+//     return view('content_detail');
+// });
 
 Route::get('/home', 'home@index');
 

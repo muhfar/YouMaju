@@ -58,7 +58,7 @@
 
   
 
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/good.gif);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/hh.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           
@@ -146,14 +146,15 @@
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h3>BERANDA</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h4>YouMaju untuk Belajar, Berkoneksi, dan Berbagi.</h4>
+      <h6>YouMaju saat ini memiliki pengikut sebagai majuers youtuber, majuers mendapatkan fasilitas pada YouMaju berupa media pembelajaran, koneksi media sosial dan berbagi kontenmu melalui YouMaju.  </h6>
       <div class="row" style="margin-top:20px">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">            
             <div class="h-entry">
               <img src="{{asset('images/blog_1.jpg')}}" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
               <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <p class="paragraf profilr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
             </div> 
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
@@ -201,7 +202,8 @@
 
     <div id="menu1" class="tab-pane fade">
       <h3>Video yang Disukai</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     
+      <h6>Majuers nikmati layanan terbaik kami dengan selalu like, comment dan subscribe video-video seru yang kamu sukai.</h6>
       <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             
@@ -281,7 +283,7 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <h2 class="footer-heading mb-4">YouMaju</h2>
                 <ul class="list-unstyled">
                 <li><a href="#">Tentang Kami</a></li>
                   <li><a href="#">Bantuan</a></li>
@@ -289,7 +291,7 @@
                 </ul>
               </div>
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
                 <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>

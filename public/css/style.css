@@ -4,7 +4,7 @@
 
 /* profile */
 .fa {
-  color: #f89d13;
+  color: #ffff00;
 }
 .col-11 img{
   height :70px;}
@@ -93,6 +93,9 @@ margin-top: 30px;
   .col-md-8{
     margin-top: -300px;
   }
+  .modal-header img{
+    margin-left: 30%;
+  }
   .site-navbar{
     margin-top: -20px;
   }
@@ -126,7 +129,6 @@ margin-top: 30px;
     margin-top: 20%;
   }
   .h-entry p{
-    margin-left: 40px;
     font-size: 15px;
     text-align :justify;
   }
@@ -771,7 +773,7 @@ font-weight: 200; }
       .site-blocks-cover h1 {
         font-size: 2rem; } }
   .site-blocks-cover p {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.82);
     font-size: 1.2rem;
     line-height: 1.5; }
   .site-blocks-cover .btn {
