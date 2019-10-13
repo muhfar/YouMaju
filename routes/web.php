@@ -16,11 +16,19 @@
 // });
 
 Route::get('/', function () {
+    return view('index');
+});
+
+Route::get('/profile', function () {
     return view('profile');
 });
 
-Route::get('/index', function () {
-Route::get('/content', function () {
+Route::get('/home', function () {
+    return view('home');
+});
+
+
+
 Route::get('/home', 'home@index');
 
 Route::get('/home/content-detail', 'home@content_detail');
