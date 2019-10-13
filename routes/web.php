@@ -19,10 +19,8 @@ Route::get('/', function () {
     return view('profile');
 });
 
-// Route::get('/', function () {
-//     return view('content_detail');
-// });
-
+Route::get('/index', function () {
+Route::get('/content', function () {
 Route::get('/home', 'home@index');
 
 Route::get('/home/content-detail', 'home@content_detail');
