@@ -38,6 +38,6 @@ class User extends Authenticatable
     ];
 
     public function google_account(){
-        return $this->belongsTo('App\GoogleAccount', 'id', 'google_account_id');
+        return $this->belongsTo('App\GoogleAccount','google_account_id' );
     }
 }

@@ -16,14 +16,10 @@ class ProfileController extends Controller
     {
         //
         $user_id=1;
-
         $user=User::findOrFail($user_id);
-        $data=[
-            'name' => $user->name,
-            'photo' => $user->photo,
-            'majuers' => $user->jumlah_majuers
-        ];
-        return view('profile');
+        
+        $data['user']=$user;
+        return view('profile', $data);
         
     }
 

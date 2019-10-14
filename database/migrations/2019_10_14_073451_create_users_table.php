@@ -17,10 +17,12 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('username')->unique();
-            $table->string('photo')->nullable()->default('default.jpg');
-            $table->text('description');
-            $table->string('url')->unique();
             $table->string('password');
+            $table->string('photo')->nullable()->default('default.jpg');
+            $table->char('gender')->nullable();
+            $table->date('birth_date')->nullable();
+            $table->text('description')->nullable();
+            $table->string('url')->unique()->nullable();
             $table->unsignedBIgInteger('jumlah_majuers')->default(0);
             $table->timestamps();
         });

@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/style.css">
     
   </head>
-  <body>
+  <body> 
   
   <div class="site-wrap">
 
@@ -94,8 +94,8 @@
 
           <div class="profile col-md-8" data-aos="fade-up" data-aos-delay="400">
           <img src="{{asset('images/person_1.jpg')}}">
-            <h2 class="text-white font-weight-light font-weight-bold">Cristine</h2>
-            <p class="breadcrumb-custom"><a>17jt</a><a> Subscriber</a></p>
+            <h2 class="text-white font-weight-light font-weight-bold"><?php echo $user->name?></h2>
+            <p class="breadcrumb-custom"><a><?php echo $user->jumlah_majuers;?></a><a> Majuers</a></p>
             <p><button href="#" class="btn btn-primary py-3 px-5" 
              style="margin-top: 50px;" data-toggle="modal" data-target="#modalLoginAvatar" >Pengaturan</button></p>
 
@@ -124,21 +124,21 @@
           <div class="col">
             <div class="form-group">
               <h5><label>Nama</label></h5>
-               <input class="form-control" type="text" name="username" placeholder="Cristine" value="Cristine">
+               <input class="form-control" type="text" name="name" placeholder="Nama" value="<?php echo $user->name?>">
              </div>
             </div>
                
            <div class="col">
             <div class="form-group">
              <h5><label>Email</label><h5>
-               <input class="form-control" type="text" placeholder="user@example.com">
+               <input class="form-control" name="email" type="text" placeholder="user@example.com" value="<?php echo $user->google_account->email?>">
              </div>
              </div>
 
              <div class="col">
               <div class="form-group">
                <h5><label>Tanggal Lahir</label><h5>
-               <input class="form-control" type="date" name="bday">
+               <input class="form-control" type="date" name="bday" value="<?php echo $user->birth_date?>">
              </div>
              </div>
 
