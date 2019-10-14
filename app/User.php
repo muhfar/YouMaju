@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'google_name', 'google_email', 'password',
+        'name', 'username', 'description', 'password', 'photo'
     ];
 
     /**
@@ -36,4 +36,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function google_account(){
+        return $this->belongsTo('App\GoogleAccount', 'id', 'google_account_id');
+    }
 }

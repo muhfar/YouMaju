@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('profile');
+Route::prefix('profile')->group(function(){
+    Route::get('/', 'profile@index');
 });
-
 Route::get('/home', 'home@index');
 
 Route::get('/redirect', 'login@redirect');
 Route::get('/callback', 'login@callback');
+
+Route::get('/profile', 'ProfileController@index');

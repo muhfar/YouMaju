@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSocialGoogleAccountsTable extends Migration
+class CreateGoogleAccountsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateSocialGoogleAccountsTable extends Migration
      */
     public function up()
     {
-        Schema::create('social_google_accounts', function (Blueprint $table) {
+        Schema::create('google_accounts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('email');
+            $table->string('name');
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateSocialGoogleAccountsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('social_google_accounts');
+        Schema::dropIfExists('google_accounts');
     }
 }
