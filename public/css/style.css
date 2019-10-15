@@ -86,6 +86,7 @@ margin-top: 30px;
   margin-right: 40px; 
   font-size: 20px;
 }
+
 @media (max-width: 991.98px){
   .btn.btn-primary{
     margin-top: 10px;
@@ -125,15 +126,35 @@ margin-top: 30px;
   }
   .unit-4-icon img{
     height :200px;
+    
+  }
+  .icon{
     margin-left: 20%;
-    margin-top: 20%;
   }
   .h-entry p{
     font-size: 15px;
     text-align :justify;
+    margin-left: 10%;
   }
   .row .mb-3 .align-items-stretch{
     background-color: #000;
+  }
+}
+@media (max-width: 320px){
+  .banner h2{
+    font-size: 12px; margin-top: 40px;
+  }
+  .tulisan p{
+    font-size: 12px;
+  }
+  .jodol p{
+    font-size: 14px;
+  }
+  .jodol h2{
+    font-size: 20px;
+  }
+  .jodol h4{
+    font-size: 18px;
   }
 }
 .paragraf p{
