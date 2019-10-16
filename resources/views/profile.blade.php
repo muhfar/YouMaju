@@ -43,8 +43,8 @@
         </div>
       </div>
       <div class="site-mobile-menu-body"></div>
-    </div>
-     -->
+    </div> -->
+    
     <header class="site-navbar py-3" role="banner">
 
       <div class="container">
@@ -55,10 +55,7 @@
             </a></h1>   
           </div>      
     </header>
-
-  
-
-    <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/hh.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/hh.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           
@@ -69,11 +66,10 @@
                       <a href="#"> <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#modalLoginAvatar"></i></a>
                       </h2>
           </div>
-            <p class="breadcrumb-custom"><a>17jt</a><a> Subscriber</a></p>
-            
-
-                
-             
+          <div class="subs">
+            <p class="breadcrumb-custom">  
+              <img src="{{asset('images/youtube.png')}}"><a>17jt</a><a> Subscriber</a></p>
+        </div>           
           </div>
         </div>
       </div>
@@ -135,130 +131,69 @@
 
     
   
-    <div class="site-section">
-      <div class="container">
-        
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Video</a></li>
-    <li><a data-toggle="tab" href="#menu1">Video yang Disukai</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h3>BERANDA</h3>
+    <div class=" modal-body ">
+      <!-- <div class="container"> -->
+            <!-- <h3>BERANDA</h3>
       <h4>YouMaju untuk Belajar, Berkoneksi, dan Berbagi.</h4>
-      <h6>YouMaju saat ini memiliki pengikut sebagai majuers youtuber, majuers mendapatkan fasilitas pada YouMaju berupa media pembelajaran, koneksi media sosial dan berbagi kontenmu melalui YouMaju.  </h6>
-      <div class="row" style="margin-top:20px">
+      <h6>YouMaju saat ini memiliki pengikut sebagai majuers youtuber, majuers mendapatkan fasilitas pada YouMaju berupa media pembelajaran, koneksi media sosial dan berbagi kontenmu melalui YouMaju.  </h6> -->
+      <div class="creator_section_wrapper">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">            
             <div class="h-entry">
-              <img src="{{asset('images/blog_1.jpg')}}" alt="Image" class="img-fluid">
+            <iframe class="iframe"
+                src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe>
               <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p class="paragraf profilr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
+              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+             </div> 
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <div class="h-entry">
-              <img src="{{asset('images/blog_2.jpg')}}" alt="Image" class="img-fluid">
+            <iframe class="iframe"
+              src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe>
               <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <div class="h-entry">
-              <img src="{{asset('images/blog_1.jpg')}}" alt="Image" class="img-fluid">
+            <iframe class="iframe"
+            src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe>
               <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
+              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+           </div> 
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <div class="h-entry">
-              <img src="{{asset('images/blog_2.jpg')}}" alt="Image" class="img-fluid">
+            <iframe class="iframe"
+              src="https://www.youtube.com/embed/PVcUT3TVmWI">
+            </iframe>
               <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <div class="h-entry">
-              <img src="{{asset('images/blog_1.jpg')}}" alt="Image" class="img-fluid">
+            <iframe class="iframe"
+            src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe>
               <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
+              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+       </div> 
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <div class="h-entry">
-              <img src="{{asset('images/blog_2.jpg')}}" alt="Image" class="img-fluid">
+            <iframe class="iframe"
+            src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe>
               <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div>
+              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+      </div>
           </div>
-        </div>
-    </div>
-
-    <div id="menu1" class="tab-pane fade">
-      <h3>Video yang Disukai</h3>
+  
+    
      
-      <h6>Majuers nikmati layanan terbaik kami dengan selalu like, comment dan subscribe video-video seru yang kamu sukai.</h6>
-      <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            
-            <div class="h-entry">
-              <img src="{{asset('images/blog_1.jpg')}}" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="{{asset('images/blog_2.jpg')}}" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="{{asset('images/blog_1.jpg')}}" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="{{asset('images/blog_2.jpg')}}" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="{{asset('images/blog_1.jpg')}}" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="{{asset('images/blog_2.jpg')}}" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4">Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
-
         
       </div>
     </div>
