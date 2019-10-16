@@ -41,7 +41,7 @@
     <div class="site-blocks-cover overlay" style="background-image: url(images/teaser_ep_4.gif);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-          <div class="col-md-8">
+          <div class="col-md-8 col-sm-12">
           <a href="index.html"> 
           <img src="{{asset('images/youMaju_polos2.png')}}" >
             </a>
@@ -63,7 +63,7 @@
       <div class="container">
         
         <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
+          <div class="col-md-7 text-center border-primary jodol">
             <h2 class="mb-0" style="color:#3c3c32">YouMaju</h2>
             <p class="color-black-opacity-5" style="color:#343a40">Apa Aja Sih yang YouMaju Tawarkan?</p>
           </div>
@@ -74,7 +74,7 @@
               <div class="unit-4-icon mr-4"><span class="text-primary">
               <img src="{{asset('images/connection.png')}}"style="height :100px">
               </span></div>
-              <div>
+              <div class="tulisan">
                 <h3>YouKoneksi</h3>
                 <p align="justify">Youmaju merupakan salah satu media yang dapat digunakan sebagai pencarian koneksi...</p>
                 <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
@@ -86,7 +86,7 @@
               <div class="unit-4-icon mr-4"><span class="text-primary">
               <img src="{{asset('images/studying.png')}}"style="height :100px">
               </span></div>
-              <div>
+              <div class="tulisan">
                 <h3>YouBelajar</h3>
                 <p align="justify">Youtube merupakan salah satu media yang sangat dicari dan digemari oleh setiap orang...</p>
                 <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
@@ -98,7 +98,7 @@
               <div class="unit-4-icon mr-4"><span class="text-primary">
               <img src="{{asset('images/networking.png')}}"style="height :100px"> 
               </span></div>
-              <div>
+              <div class="tulisan">
                 <h3>YouBerbagi</h3>
                 <p align="justify">Berbagi cerita adalah hal termudah yang dapat dilakukan setiap orang, setelah anda...</p>
                 <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
@@ -116,7 +116,7 @@
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-7 jodol" data-aos="fade-up" data-aos-delay="400">
             <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
             <h2 class="text-white font-weight-light mb-5 h1">Klik dan Cek YouMaju Disini Sekarang!</h2>
             
@@ -192,7 +192,7 @@
          
         <!-- <div class="row mb-3 align-items-stretch"> -->
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-          <div class="unit-4-icon mr-4">
+          <div class="unit-4-icon mr-4 icon">
               <img src="{{asset('images/fav_icon_you_maju_YB.png')}}" alt="Image" class="img-fluid">
               
             </div> 
@@ -269,7 +269,7 @@
     <div class="site-section border-top">
       <div class="container">
         <div class="row text-center">
-          <div class="col-md-12">
+          <div class="col-md-12 jodol">
             <h4 class="mb-5 text-black">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h4>
             <p class="mb-0"><a href="booking.html" class="btn btn-primary py-3 px-5 text-white">Klik Disini</a></p>
           </div>
@@ -287,7 +287,6 @@
                 <h2 class="footer-heading mb-4">YouMaju</h2>
                 <ul class="list-unstyled">
                   <li><a href="#">Tentang Kami</a></li>
-                  <li><a href="#">Bantuan</a></li>
                   <li><a href="#">Kontak Kami</a></li>
                   </ul>
               </div>
@@ -327,3 +326,4 @@
     
   </body>
 </html>
+  
