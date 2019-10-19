@@ -29,42 +29,32 @@
   
   <div class="site-wrap">
 
-    <header class="site-navbar py-3" role="banner">
-
-      <div class="container gambaricon">
-        <div class="align-items-center" data-aos="fade-up" data-aos-delay="400" >
-         <a href="#"> <img src="{{asset('images/fav_icon_you_maju_YB.png')}}">
-                  
-    </header>
-
-    
-    <div class="site-blocks-cover overlay" style="background-image: url(images/teaser_ep_4.gif);" data-aos="fade" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
-          <div class="col-md-8 col-sm-12">
-          <a href="index.html"> 
-          <img src="{{asset('images/youMaju_polos2.png')}}" >
-            </a>
-            <div class="banner">
-            <h2 class="text-uppercase font-weight-bold" style="color : #f7f721; font-family: Verdana;">
-            Belajar
-            <img src="{{asset('images/logo_youmaju_2.png')}}"> Berkoneksi
-            <img src="{{asset('images/logo_youmaju_2.png')}}"> Berbagi
-          </h2>
-            <h6 class=" font-weight-bold"style="color : #f7f721">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h6>
-             <a href="{{ url('/redirect') }}" class="btn btn-primary font-weight-bold">AYO MASUK</a>
-        </div>
+  <header class="masthead" style="background-image: url(images/Untitled.png);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+          <img src="{{asset('images/youMaju_polos2.png')}}" > 
+            <h5 class=" tul" style="color: #f3da3a;">YouMaju membantu majuers belajar membuat content yang positive, menarik, dan 
+          impactfull. Kemudian dengan YouMaju kamu dapat dengan mudah membangun koneksi antar content creator, dan saling support temanmu 
+          dengan cara memberikan feedback terbaik majuers. Selalu Bagikan ceritamu pada yang lain untuk menyebar dampak positif.</h5>
+            <a href="{{ url('/redirect') }}" class="btn btn-outline btn-xl js-scroll-trigger">Gabung Sekarang!</a>
+          </div>
+          </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>  
-
+    </div>
+  </header>
+    
     <div class="site-section">
       <div class="container">
         
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary jodol">
-            <h2 class="mb-0" style="color:#3c3c32">YouMaju</h2>
+            <h1 class="mb-0" style="color:#3c3c32">YouMaju</h1>
             <p class="color-black-opacity-5" style="color:#343a40">Apa Aja Sih yang YouMaju Tawarkan?</p>
           </div>
         </div>
@@ -75,9 +65,9 @@
               <img src="{{asset('images/connection.png')}}"style="height :100px">
               </span></div>
               <div class="tulisan">
-                <h3>YouKoneksi</h3>
-                <p align="justify">Youmaju merupakan salah satu media yang dapat digunakan sebagai pencarian koneksi...</p>
-                <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
+                <h3>YouCreate</h3>
+                <p>YouMaju menciptakan content yang positive, menarik, dan impacfull di YouMaju....</p>  
+                             <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 btn btn-outline btn-xl" style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
           </div>
@@ -87,9 +77,9 @@
               <img src="{{asset('images/studying.png')}}"style="height :100px">
               </span></div>
               <div class="tulisan">
-                <h3>YouBelajar</h3>
-                <p align="justify">Youtube merupakan salah satu media yang sangat dicari dan digemari oleh setiap orang...</p>
-                <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
+                <h3>YouConnect</h3>
+                <p>YouMaju menghubungkan sesama content creator, Support dan berikan feedback anda....</p>
+                <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 btn btn-outline btn-xl " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
           </div>
@@ -99,9 +89,9 @@
               <img src="{{asset('images/networking.png')}}"style="height :100px"> 
               </span></div>
               <div class="tulisan">
-                <h3>YouBerbagi</h3>
-                <p align="justify">Berbagi cerita adalah hal termudah yang dapat dilakukan setiap orang, setelah anda...</p>
-                <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
+                <h3>YouMakeImpact</h3>
+                <p>YouMaju dengan ceritamu, kemudian bagikan ke yang lain Untuk membuat dampak positif....</p>
+                <p class="mb-0"><a href="#" class="btn-primary py-1 px-1 btn btn-outline btn-xl " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
               </div>
             </div>
           </div>
@@ -112,7 +102,7 @@
   
 
 
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/background.png); background-attachment: fixed;">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
@@ -199,11 +189,9 @@
           </div>
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
             <div class="h-entry" >
-             <p>YouMaju memberikan kemudahan pada youtuber pemula sebagai media pembelajaran, 
-               koneksi dan berbagi cerita. YouMaju memberikan keuntungan yang didapatkan youtuber 
-               dan viewer perihal berbagi cerita, yakni youtuber mendaptkan pengahsilan dari karyanya , 
-               dan viewer mendapatkan point, point tersebut dapat ditukarkan dengan penawaran terbaik. 
-               YouMaju untuk Belajar dan Cari koneksi anda dan temukan peluang berbagi ceritamu!</p>
+             <p>YouMaju memberikan kemudahan pada youtuber pemula sebagai sebagai sarana pembelajaran, 
+               koneksi dan memberikan dampak positif. Di YouMaju, konten creator dapat berjejaring dan 
+               saling support antara sesama content creator dengan menonton dan memberikan feedback yang membangun. #yukmajubersama </p>
             </div>
           </div>
         </div>
