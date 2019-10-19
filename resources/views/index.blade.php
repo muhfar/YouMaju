@@ -29,7 +29,7 @@
   
   <div class="site-wrap">
 
-  <header class="masthead" style="background-image: url(images/Untitled.png);" data-aos="fade" data-stellar-background-ratio="0.5">
+  <header class="masthead" style="background-image: url(images/Untitled1.png);" data-aos="fade" data-stellar-background-ratio="0.5">
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
