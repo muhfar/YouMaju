@@ -100,7 +100,15 @@ header.masthead .device-container {
 header.masthead .device-container .screen img {
   border-radius: 3px;
 }
-
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -288,7 +296,7 @@ section.contact h2 {
 /* profile */
 .subss img{
   width: 5%;
-  margin-top: 25px;
+ 
 }
 .fa {
   color: #ffff00;
@@ -387,8 +395,9 @@ height :70px; float: right;}
   margin-right: 40px; 
   font-size: 20px;
 }
-
+}
 @media (max-width: 992px){
+
   .kanan{
     position: relative;
     width: 100%;
@@ -398,7 +407,6 @@ height :70px; float: right;}
   }.tulisanjudul p{
     color : #f7f721; font-size: 15px; 
     margin-left:-20px; margin-right:-50px
-  }
   }
   .btnlanding{
     background-color: #f3da3a; 
@@ -440,8 +448,8 @@ height :70px; float: right;}
   margin-bottom: 5px;
   }
   .iframe{
-    width: 280px;
-    height: 215px;
+    width:860px;
+    height:615px;
     margin-left: -13px;
   }
   .col-md-8{
@@ -531,11 +539,6 @@ height :70px; float: right;}
   }
   .icon{
     margin-left: 15%;
-  }
-  .iframe{
-    width: 240px;
-    height: 200px;
-    margin-top: -0px;
   }
 }
 .paragraf p{

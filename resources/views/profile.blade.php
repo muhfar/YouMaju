@@ -33,7 +33,7 @@
     
   </head>
   <body>
-  
+
   <div class="site-wrap">
 
     <!-- <div class="site-mobile-menu">
@@ -45,15 +45,34 @@
       <div class="site-mobile-menu-body"></div>
     </div> -->
     
-    <header class="site-navbar py-3" role="banner">
+    <header class="site-navbar" role="banner">
 
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-11 col-xl-2 gambar">
-          <h1 class="" ><a href="index.html">
-          <img src="{{asset('images/fav_icon_you_maju_YB.png')}}">
-            </a></h1>   
-          </div>      
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Start Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     </header>
       <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/hh.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
@@ -125,89 +144,121 @@
       </div>
 
     </div>
-    <!--/.Content-->
   </div>
-</div>
-
-    
+</div>    
   
     <div class=" modal-body ">
-      <!-- <div class="container"> -->
-            <!-- <h3>BERANDA</h3>
-      <h4>YouMaju untuk Belajar, Berkoneksi, dan Berbagi.</h4>
-      <h6>YouMaju saat ini memiliki pengikut sebagai majuers youtuber, majuers mendapatkan fasilitas pada YouMaju berupa media pembelajaran, koneksi media sosial dan berbagi kontenmu melalui YouMaju.  </h6> -->
-      <div class="creator_section_wrapper">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">            
-            <div class="h-entry">
-            <iframe class="iframe"
-                src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe>
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-             </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-            <iframe class="iframe"
-              src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe>
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-            <iframe class="iframe"
+      
+    <div class="creator_section_wrapper"><h2>Video</h2>
+    <div class="row">   
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="h-100">
+        <a href="#"><iframe class="iframe"
             src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe>
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-           </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-            <iframe class="iframe"
-              src="https://www.youtube.com/embed/PVcUT3TVmWI">
-            </iframe>
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-            <iframe class="iframe"
-            src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe>
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-       </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-            <iframe class="iframe"
-            src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe>
-              <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-              <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              </iframe></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project One</a>
+          </h4>
+          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+        </div>
       </div>
-          </div>
-  
-    
-     
-        
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="h-100">
+        <a href="#"><iframe class="iframe"
+            src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project One</a>
+          </h4>
+          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+        </div>
       </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="h-100">
+        <a href="#"><iframe class="iframe"
+            src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project One</a>
+          </h4>
+          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="h-100">
+        <a href="#"><iframe class="iframe"
+            src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project One</a>
+          </h4>
+          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="h-100">
+        <a href="#"><iframe class="iframe"
+            src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project One</a>
+          </h4>
+          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="h-100">
+        <a href="#"><iframe class="iframe"
+            src="https://www.youtube.com/embed/PVcUT3TVmWI">
+              </iframe></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project One</a>
+          </h4>
+          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>     
     </div>
 
     <div class="container text-center pb-5">
-      <div class="row">
-        <div class="col-12">
-          <p class="custom-pagination">
-            <span>1</span>
-            <a href="#">2</a>
-            <a href="#">3</a>
-          </p>
-        </div>
-      </div>
+       <!-- Pagination -->
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+    </li>
+  </ul>
+
     </div>
 
     
