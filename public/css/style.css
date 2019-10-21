@@ -1,7 +1,11 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
-
+.about-section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ffff;
+}
 .imagee img{
   max-width:150px;
   margin-top: 20px;

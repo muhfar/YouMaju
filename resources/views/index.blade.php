@@ -141,18 +141,15 @@
   
 
 
-    <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/teaser_youmaaju.gif); background-attachment: fixed;">
+    <section id="about" class="about-section text-center">
     <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
-
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
-            <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
-            <h2 class="text-white font-weight-light mb-5 h1">  Klik dan Cek YouMaju Disini Sekarang!</h2>
-            
-          </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
         </div>
       </div>
-    </div>  
+      <img src="{{asset('images/teaser_youmaaju.gif')}}" class="img-fluid" alt="">
+    </div>
+  </section>
     
     <!-- <div class="site-section border-bottom">
       <div class="container">
