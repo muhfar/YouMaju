@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use App\Http\Controllers\curl;
 
 use Socialite;
 use Google_Client;
@@ -17,19 +18,6 @@ class login extends Controller
 
 	public function redirect()
     {
-        // $client = new Google_Client();
-        // $client->setAuthConfig('client_secret.json');
-        // $client->addScope(GOOGLE_SERVICE_YOUTUBE::YOUTUBE_READONLY);
-        // $client->setRedirectUri('http://'. $_SERVER['HTTP_HOST'] . ('/callback'));
-
-        // $client->setAccessType('offline');
-        // $client->setApprovalPrompt('consent');
-        // $client->setIncludeGrantedScopes(true);   // incremental auth
-        // $client->setState($sample_passthrough_value);
-
-
-        // $auth_url = $client->createAuthUrl();
-        // header('Location: ' . filter_var($auth_url, FILTER_SANITIZE_URL));
     	// $data['user'] = session()->all();
 
         
@@ -80,29 +68,23 @@ class login extends Controller
 
 	        }
 
-	        $google_client_token = [
-		        'access_token' => $user['token'],
-		        'refresh_token' => $user['refreshToken'],
-		        'expires_in' => $user['expiresIn']
-		    ];
+		    $url = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$user['token'].'&part=id&mine=true';
+		    
+		    $ch = new curl;
+		    $result = $ch->connect($url);
 
-		    $client = new Google_Client();
-		    $client->setDeveloperKey(env('GOOGLE_API_KEY'));
-		    $client->setAccessToken(json_encode($google_client_token));
+		    var_dump($result);
 
-		    $youtube = new Google_Service_YouTube($client);
-		    $channel = $youtube->channels->listChannels(array('snippet','statistics'), array('mine' => true));
-
-		    var_dump($channel);
+		    // var_dump(json_encode($channel));
 	        
 	        //data login from google
-	        // $data['session'] = DB::table('user_account')->where('idGoogle', $user['id'])->first(['idUser', 'idGoogle', 'token']);
+	        $data['session'] = DB::table('user_account')->where('idGoogle', $user['id'])->first([ 'idGoogle', 'token']);
 
-	        // session(json_decode(json_encode($data['session']), true));
+	        session(json_decode(json_encode($data['session']), true));
 
 	        // var_dump($user);
 	        // var_dump($data['session']);
-	        // return redirect('/profile');
+	        return redirect('/profile');
         }
     }
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\curl;
 
 class profile extends Controller
 {
@@ -12,20 +13,13 @@ class profile extends Controller
     	if(session()->has('idUser')){
     		$data['user'] = session()->all();
 
-    		$access_token = $data['user']['token'];
-    		$curl = curl_init();
+    		// $url = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['user']['token'].'part=snippet%2Cstatistics&mine=true';
 
-        	curl_setopt($curl, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/channels?access_token='.$access_token.'&part=snippet%2Cstatistics&key=AIzaSyDTSi3xV13PtHvv5H8PcrP0Qq-QVg01TEI&mine=true');
-        	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        	curl_setopt($curl, CURLOPT_AUTOREFERER, true); 
+      //   	$ch = new curl;
+		    // $result = $ch->connect($url);
 
-        	$result = curl_exec($curl);
-
-        	curl_close($curl);
-
-        	$result = json_decode($result, true);
-        	var_dump($result);
-    		return view('profile', $data);	
+		    var_dump($data);
+    		return view('index', $data);
     	}else{
     		return redirect('/');
     	}
