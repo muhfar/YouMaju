@@ -21,38 +21,20 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <nav class="navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="#"><img src="{{ asset('/images/fav_icon.png')}}" alt="">
     </a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler d-lg-none " type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#">Action 1</a>
-            <a class="dropdown-item" href="#">Action 2</a>
-          </div>
-        </li>
-      </ul>
-    </div>
   </nav>
   <!-- end navbar -->
 
   <!-- Sidebar -->
   <div class="main-container container-fluid col-sm-12">
     <div class="row">
-      <div class="navbar-side col-sm-1">
-        <ul>
+      <div class="navbar-side col-sm-1 d-sm-none d-md-block" id="collapsibleNavId">
+        <ul class="d-flex justify-content-center flex-column align-items-center mt-4">
           <li>
             <div class="row">
               <div class="navside-icon container-fluid embed-responsive-1by1">
@@ -90,25 +72,23 @@
             </div>
           </li>
           <li>
-            <div class="row">
+            <div class="row text-center">
               <div class="navside-icon container-fluid embed-responsive-1by1">
                 <div class="icon">
-                  <i class="fas fa-video fa-2x"></i>
+                  <i class="fas fa-video fa-2x "></i>
                 </div>
                 <div class="icon-name">
-                  <p>My Video</p>
+                  <p>My Videos</p>
                 </div>
               </div>
             </div>
           </li>
+
           <li>
             <div class="row">
               <div class="navside-icon container-fluid embed-responsive-1by1">
                 <div class="icon">
                   <i class="fas fa-ellipsis-h fa-2x"></i>
-                </div>
-                <div class="icon-name">
-                  <p></p>
                 </div>
               </div>
             </div>
@@ -164,29 +144,291 @@
           <div class="right-subscribe col-sm-3 d-flex justify-content-around offset-5 align-items-center">
             <div class="subscribe btn btn-outline-secondary">
               <a href="#">Subscribe</a>
-
             </div>
             <i class="fa fa-bell" aria-hidden="true"></i>
           </div>
         </div>
+
         <!--  add comment -->
         <hr>
-        <div class="row">
-          <div class="col-sm-1">
-            <div class="com-container">
-              <div class="hero-img">
-                <img src="../images/person_3.jpg" alt="" class="img">
+
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-1">
+                <div class="com-container">
+                  <div class="hero-img">
+                    <img src="../images/person_3.jpg" alt="" class="img">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-11">
+                <div class="row d-flex">
+                  <div class="commentator col-sm-10">
+                    <p><strong>George Montendo</strong> <span class="date-commented"> 2 days ago</span></p>
+                  </div>
+                </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia iure cumque perspiciatis aperiam veniam, vel, ullam alias, aut vitae nulla voluptatibus dolor asperiores sit. Magnam culpa veritatis ullam maxime sapiente, similique illum itaque delectus! Explicabo est similique aut qui cum doloremque et, consectetur id nihil ut autem, nam suscipit possimus.</p>
+                <div class="row comments-btn">
+                  <div class="col-sm-3 d-flex justify-content-between align-items-center">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"> 45</i>
+                    <i class="fa fa-thumbs-down" aria-hidden="true"> 3</i>
+                    <a href="#">reply</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- end add comment -->
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-1">
+                <div class="com-container">
+                  <div class="hero-img">
+                    <img src="../images/person_3.jpg" alt="" class="img">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-11">
+                <div class="row d-flex">
+                  <div class="commentator col-sm-10">
+                    <p><strong>George Montendo</strong> <span class="date-commented"> 2 days ago</span></p>
+                  </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia iure cumque perspiciatis aperiam veniam, vel, ullam alias, aut vitae nulla voluptatibus dolor asperiores sit. Magnam culpa veritatis ullam maxime sapiente, similique illum itaque delectus! Explicabo est similique aut qui cum doloremque et, consectetur id nihil ut autem, nam suscipit possimus.</p>
+                <div class="row comments-btn">
+                  <div class="col-sm-3 d-flex justify-content-between align-items-center">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"> 45</i>
+                    <i class="fa fa-thumbs-down" aria-hidden="true"> 3</i>
+                    <a href="#">reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-1">
+                <div class="com-container">
+                  <div class="hero-img">
+                    <img src="../images/person_3.jpg" alt="" class="img">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-11">
+                <div class="row d-flex">
+                  <div class="commentator col-sm-10">
+                    <p><strong>George Montendo</strong> <span class="date-commented"> 2 days ago</span></p>
+                  </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia iure cumque perspiciatis aperiam veniam, vel, ullam alias, aut vitae nulla voluptatibus dolor asperiores sit. Magnam culpa veritatis ullam maxime sapiente, similique illum itaque delectus! Explicabo est similique aut qui cum doloremque et, consectetur id nihil ut autem, nam suscipit possimus.</p>
+                <div class="row comments-btn">
+                  <div class="col-sm-3 d-flex justify-content-between align-items-center">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"> 45</i>
+                    <i class="fa fa-thumbs-down" aria-hidden="true"> 3</i>
+                    <a href="#">reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-1">
+                <div class="com-container">
+                  <div class="hero-img">
+                    <img src="../images/person_3.jpg" alt="" class="img">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-11">
+                <div class="row d-flex">
+                  <div class="commentator col-sm-10">
+                    <p><strong>George Montendo</strong> <span class="date-commented"> 2 days ago</span></p>
+                  </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia iure cumque perspiciatis aperiam veniam, vel, ullam alias, aut vitae nulla voluptatibus dolor asperiores sit. Magnam culpa veritatis ullam maxime sapiente, similique illum itaque delectus! Explicabo est similique aut qui cum doloremque et, consectetur id nihil ut autem, nam suscipit possimus.</p>
+                <div class="row comments-btn">
+                  <div class="col-sm-3 d-flex justify-content-between align-items-center">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"> 45</i>
+                    <i class="fa fa-thumbs-down" aria-hidden="true"> 3</i>
+                    <a href="#">reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+      <!-- end add comment -->
+
       <hr>
       <!-- end main content -->
 
+      <!-- start sidebar kanan -->
+      <div class="sidebar-vids col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="main-vid-view embed-responsive embed-responsive-16by9 m-2">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/C79LNjuZPgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="sidebar-title-vid pl-2">
+                <h6>Belajar dari orang Jepang, Passion aja ga cukup? 👉 Ikigai 📖LHTL #S02E03</h6>
+              </div>
+              <p class="vid-owner pl-2"><span class="channel">hutata </span> 67k views</p>
+            </div>
+          </div>
+        </div>
 
+      </div>
 
     </div>
   </div>
