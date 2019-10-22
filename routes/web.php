@@ -38,6 +38,9 @@ Route::get('/youconnect', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+Route::get('/content_detail', function () {
+    return view('content_detail');
+});
 
 
 
