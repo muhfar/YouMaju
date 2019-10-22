@@ -18,6 +18,15 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/youcreate', function () {
+    return view('youcreate');
+});
+Route::get('/youconnect', function () {
+    return view('youconnect');
+});
+Route::get('/youmakeimpact', function () {
+    return view('youmakeimpact');
+});
 
 Route::get('/profile', 'profile@index');
 
