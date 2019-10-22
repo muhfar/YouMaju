@@ -26,6 +26,20 @@ Route::get('/logout', 'profile@logout');
 Route::get('/home', function () {
     return view('home');
 });
+Route::get('/youcreate', function () {
+    return view('youcreate');
+});
+Route::get('/youmakeimpact', function () {
+    return view('youmakeimpact');
+});
+Route::get('/youconnect', function () {
+    return view('youconnect');
+});
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+
 
 
 

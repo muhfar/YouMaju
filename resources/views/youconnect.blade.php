@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>You &mdash; Colorlib Website Template</title>
+    <title>YouMaju &mdash; YouConnect</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -40,21 +40,21 @@
 
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="mb-0" style="color:#3c3c32">YouBerbagi</h2>
+            <h2 class="mb-0" style="color:#3c3c32">YouConnect</h2>
             <p class="color-black-opacity-5" style="color:#343a40">
-            Mau berbagi cerita dengan mudah, cepat,  praktis dan menguntungkan?</p>
+            Mau tahu bagaimana caranya YouMaju mencari koneksi untuk anda ?</p>
           </div>
         </div>
 
         <div style="color:#343a40; font-size:20px;" >
-                <p align="justify">Berbagi cerita adalah hal termudah yang dapat dilakukan setiap orang, setelah anda mendapatkan 
-                    pemebelajaran menjadi youtuber profesional tentunya anda haruslah mengetahui cara berbagi cerita terbaik yang anda 
-                    buat dan juga media pendukung lainnya yang membantu penjualan media promosi cerita anda. YouMaju adalah salah satu 
-                    media berbagi cerita terbaik yeng diberikan, karena dengan YouMaju didapatkan kemudahan, kecepatan dan keuntungan 
-                    yang berlimpah. YouMaju menawarkan berbagi cerita pada akun youtube chanel anda yang menguntungkan baik dari yotuber 
-                    maupun viewer. Pada YouMaju viewer memiliki keuntungan berupa point dari setiap chanel youtube yang mereka tonton.
-                     Point tersebut dapat ditukarkan berupa penawaran terbaik yang diberiakan YouMaju. Youtuber juga memperoleh kecepatan 
-                     pertambahan viewers karena dengan YouMaju chanel yang anda tawarkan menjadi lebih menarik untuk ditonton.</p>
+                <p align="justify">YouMaju menghubungkan sesama content creator, Support dan berikan feedback anda.
+Majuers harus tahu bahwa dalam menciptakan content, majuers perlu adanya partner atau kerja sama dalam
+menciptakan content yang menarik dan berdampak. YouMaju menghubungkan para content creator untuk
+saling support dengan cara memanfaatkan tools sosial media YouMaju. Jadi majuers jangan ragu untuk
+menggunakan YouMaju karena majuers bisa mendapatkan feedback berupa kemudahan promosi content
+majuers.
+
+</p>
             </div>
         </div>
     </div> 
@@ -65,26 +65,27 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Tentang YouMaju</h2>
+                <h2 class="footer-heading mb-4">YouMaju</h2>
                 <ul class="list-unstyled">
                   <li><a href="#">Tentang Kami</a></li>
-                  <li><a href="#">Bantuan</a></li>
                   <li><a href="#">Kontak Kami</a></li>
                   </ul>
               </div>
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-              </div>
+                <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
+                 <a href="https://www.instagram.com/youmaju_/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <h2 class="footer-heading mb-4"></h2>
-            
-          </div>
+          <div class="row col-md-4 text-center">
+          <div class="col-md-12">
+            <div class="border-top">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy; YouMaju <script>document.write(new Date().getFullYear());</script> 
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
         </div>
           
         </div>

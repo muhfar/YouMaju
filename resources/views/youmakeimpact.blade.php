@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>You &mdash; Colorlib Website Template</title>
+    <title>YouMaju &mdash; YouMakeImpact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -40,27 +40,19 @@
 
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="mb-0" style="color:#3c3c32">YouKoneksi</h2>
+            <h2 class="mb-0" style="color:#3c3c32">YouMakeImpact</h2>
             <p class="color-black-opacity-5" style="color:#343a40">
-            Mau tahu bagaimana caranya YouMaju mencari koneksi untuk anda ?</p>
+            Mau berbagi cerita dengan mudah, cepat,  praktis dan menguntungkan?</p>
           </div>
         </div>
 
         <div style="color:#343a40; font-size:20px;" >
-                <p align="justify">Hal utama yang harus dilakukan dalam mencari koneksi bisnis yakni 
-            mengetahui passion yang kita dalami serta peluang dalam mengembangkannya. 
-            Kemudian menemukan teman yang sama dengan passion yang kita miliki. 
-            Youmaju merupakan salah satu media yang dapat digunakan sebagai pencarian 
-            koneksi passion diri kita. Cara mencari koneksi relasi terbaik yang 
-            diberikan YouMaju yakni dengan menjadikan teman di YouMaju menjadi relasi 
-            bisnis yang menguntungkan bagi kedua belah pihak yakni baik viewer maupun 
-            youtuber. Koneksi ditemukan dengan mencari kesamaan kebutuhan yang dicari 
-            oleh setiap pengguna. Koneksi terbangun karena dari adanya interst antara 
-            keduanya, interst terbangun dengan cara mengunjungi situs pribadi mereka, 
-            melihat profil mereka,  dan berada dalam networknya serta interst kita 
-            tentang aktifitasnya. Kemudian setelah interst terbangun coba berikan ide, 
-            pengalaman anda, serta apa yang anda ketahui mengenai permasalahan yang ada. 
-            Selanjutnya manfaatkan tools yang terdapat pada YouMaju untuk memaksimalkan koneksi yang terbangun.</p>
+                <p align="justify">YouMaju dengan ceritamu, kemudian bagikan ke yang lain Untuk membuat dampak positif.
+Majuers pasti content yang kamu buat tentunya punya dampak yang berpengaruh bagi setiap orang. Salah
+satu yang harus diperhatikan adalah bagaimana majuers membagikan content majuers sesuai dengan
+porsinya. Di YouMaju content yang kamu ciptakan haruslah mempunyai dampak yang postive tentunya bagi
+setiap orang. Jadi dengan adanya YouMaju majuers sudah tidak ragu lagi dengan isi content yang dimilki
+YouMaju. </p>
             </div>
         </div>
     </div> 
@@ -71,26 +63,27 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Tentang YouMaju</h2>
+                <h2 class="footer-heading mb-4">YouMaju</h2>
                 <ul class="list-unstyled">
                   <li><a href="#">Tentang Kami</a></li>
-                  <li><a href="#">Bantuan</a></li>
                   <li><a href="#">Kontak Kami</a></li>
                   </ul>
               </div>
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-              </div>
+                <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
+                 <a href="https://www.instagram.com/youmaju_/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <h2 class="footer-heading mb-4"></h2>
-            
-          </div>
+          <div class="row col-md-4 text-center">
+          <div class="col-md-12">
+            <div class="border-top">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy; YouMaju <script>document.write(new Date().getFullYear());</script> 
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
         </div>
           
         </div>

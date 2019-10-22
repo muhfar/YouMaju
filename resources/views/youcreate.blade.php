@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>You &mdash; Colorlib Website Template</title>
+    <title>YouMaju &mdash; YouCreate</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -40,24 +40,20 @@
 
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="mb-0" style="color:#3c3c32">YouBelajar</h2>
+            <h2 class="mb-0" style="color:#3c3c32">YouCreate</h2>
             <p class="color-black-opacity-5" style="color:#343a40">
             Bagaimana tahapan belajar jadi youtuber terkenal ? Disini tempatnya !</p>
           </div>
         </div>
 
        <div class="paragraftentang"style="color:#343a40; font-size:20px;" >
-                <p align="justify">Setiap orang tentunya sudah tidak asing lagi dengan youtube. Youtube merupakan salah satu media yang 
-                    sangat dicari dan digemari oleh setiap orang. Banyak yang beranggapan bahwa youtube adalah salah satu media penghasil 
-                    uang tercepat dan termudah, namun youtuber sendiri tidak mengetahui bagaimana cara mendapatkan dan mengoptimalkan 
-                    penggunaan youtube. Terdapat beberapa tahapan yang harus diperhatikan guna menjadi youtuber profesional yakni diantaranya :
-           <ul> 1.	Pastikan anda sudah memiliki akun youtube chanel.</ul>
-           <ul> 2.	Jika anda sudah memiliki akun youtube, lakukan monetisasi pada akun youtube anda.</ul>
-           <ul> 3.	Sambungkan akun youtube anda ke AdSense.</ul>
-           <ul> 4.	Lakukan Conversion Rate ke Product Page.</ul>
-           <ul> 5.	Kemudian anda juga harus memperhatikan isi konten youtube chanel yang anda buat.</ul>
-                   <p> Untuk lebih lengkapnya lagi mengenai tips, trik dan video tutorialnya cari di situs Youmaju, pada YouMaju berisikan 
-                    tahapan-tahapan menjadikan youtuber profesional secara lengkap.</p></p>
+                <p align="justify">YouMaju menciptakan content yang positive, menarik, dan impacfull di YouMaju. 
+Majuers tentunya sudah tidak asing lagi dengan content creator tentunya, tapi apakah majuers tahu bahwa
+menciptakan sebuah content menarik itu ada trik dan tipsnya? majuers harus tahu dahulu bagaimana
+majuers membuat content yang positive, menarik, dan impacfull. YouMaju merupakan salah satu media yang
+membantu majuers dalam menciptakan content yang memberi pengaruh pada lainnya. YouMaju
+memberikan pembelajaran yang bertahap pada tiap sesinya sehingga majuers dapat dengan cepat
+menciptkan content yang memiliki viewer terbanyak pada kelasnya.</p>
             </div>
         </div>
     </div> 
@@ -68,26 +64,27 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Tentang YouMaju</h2>
+                <h2 class="footer-heading mb-4">YouMaju</h2>
                 <ul class="list-unstyled">
                   <li><a href="#">Tentang Kami</a></li>
-                  <li><a href="#">Bantuan</a></li>
                   <li><a href="#">Kontak Kami</a></li>
                   </ul>
               </div>
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-              </div>
+                <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
+                 <a href="https://www.instagram.com/youmaju_/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <h2 class="footer-heading mb-4"></h2>
-            
-          </div>
+          <div class="row col-md-4 text-center">
+          <div class="col-md-12">
+            <div class="border-top">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy; YouMaju <script>document.write(new Date().getFullYear());</script> 
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
         </div>
           
         </div>

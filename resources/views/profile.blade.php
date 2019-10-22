@@ -49,32 +49,33 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Start Bootstrap</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="imagee"><h1><a href="index.html">
+     <img src="{{asset('images/youMaju_polos2.png')}}">
+      </a></h1></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="#">Beranda
                 <span class="sr-only">(current)</span>
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Notifikasi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#">Pesan</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
     </header>
-      <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/hh.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/pr.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           
@@ -153,7 +154,7 @@
     <div class="row">   
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="h-100">
-        <a href="#"><iframe class="iframe"
+        <a href="#"><iframe class="card-img-top"
             src="https://www.youtube.com/embed/PVcUT3TVmWI">
               </iframe></a>
         <div class="card-body">
@@ -166,7 +167,7 @@
     </div>
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="h-100">
-        <a href="#"><iframe class="iframe"
+        <a href="#"><iframe class="card-img-top"
             src="https://www.youtube.com/embed/PVcUT3TVmWI">
               </iframe></a>
         <div class="card-body">
@@ -179,7 +180,7 @@
     </div>
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="h-100">
-        <a href="#"><iframe class="iframe"
+        <a href="#"><iframe class="card-img-top"
             src="https://www.youtube.com/embed/PVcUT3TVmWI">
               </iframe></a>
         <div class="card-body">
@@ -192,7 +193,7 @@
     </div>
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="h-100">
-        <a href="#"><iframe class="iframe"
+        <a href="#"><iframe class="card-img-top"
             src="https://www.youtube.com/embed/PVcUT3TVmWI">
               </iframe></a>
         <div class="card-body">
@@ -205,7 +206,7 @@
     </div>
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="h-100">
-        <a href="#"><iframe class="iframe"
+        <a href="#"><iframe class="card-img-top"
             src="https://www.youtube.com/embed/PVcUT3TVmWI">
               </iframe></a>
         <div class="card-body">
@@ -218,7 +219,7 @@
     </div>
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="h-100">
-        <a href="#"><iframe class="iframe"
+        <a href="#"><iframe class="card-img-top"
             src="https://www.youtube.com/embed/PVcUT3TVmWI">
               </iframe></a>
         <div class="card-body">
