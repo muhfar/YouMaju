@@ -14,10 +14,15 @@ class CreateUserAccount extends Migration
     public function up()
     {
         Schema::create('user_account', function (Blueprint $table) {
-            $table->string('google_id')->nullable();
-            $table->string('google_name')->nullable();
-            $table->string('photo')->nullable();
-            $table->string('password')->nullable()->change();
+            $table->bigIncrements('idUser');
+            $table->string('idGoogle');
+            $table->string('name');
+            $table->string('email');
+            $table->string('token');
+            $table->string('refreshToken')->nullable();
+            $table->string('photo');
+            $table->string('idChannel')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -29,5 +34,7 @@ class CreateUserAccount extends Migration
     public function down()
     {
         Schema::dropIfExists('user_account');
+        Schema::dropIfExists('social_google_accounts');
+
     }
 }

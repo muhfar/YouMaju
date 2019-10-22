@@ -80,6 +80,7 @@
           <p align="justify">YouMaju membantu majuers belajar membuat content yang positive, menarik, dan 
           impactfull. Kemudian dengan YouMaju kamu dapat dengan mudah membangun koneksi antar content creator, dan saling support temanmu 
           dengan cara memberikan feedback terbaik majuers. Selalu Bagikan ceritamu pada yang lain untuk menyebar dampak positif.</p>
+
             <a href="{{ url('/redirect') }}" class=" btn-outline btn-xl ">Gabung Sekarang!</a>
         </div>
       </div>

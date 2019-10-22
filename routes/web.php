@@ -19,9 +19,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+Route::get('/profile', 'profile@index');
+
+Route::get('/logout', 'profile@logout');
 
 Route::get('/home', function () {
     return view('home');
