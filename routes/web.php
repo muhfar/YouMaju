@@ -35,9 +35,7 @@ Route::get('/youmakeimpact', function () {
 Route::get('/youconnect', function () {
     return view('youconnect');
 });
-Route::get('/profile', function () {
-    return view('profile');
-});
+
 Route::get('/content_detail', function () {
     return view('content_detail');
 });

@@ -9,9 +9,6 @@ use Illuminate\Support\Arr;
 use App\Http\Controllers\curl;
 
 use Socialite;
-use Google_Client;
-use Google_Service_YouTube;
-
 
 class login extends Controller
 {	
@@ -28,7 +25,7 @@ class login extends Controller
     		
     	// }
     	return Socialite::driver('google')
-    	->scopes(['openid','email', 'profile', 'https://www.googleapis.com/auth/youtube.readonly'])
+    	->scopes(['openid','email', 'profile', 'https://www.googleapis.com/auth/youtube.readonly', 'https://www.googleapis.com/auth/youtube', 'https://www.googleapis.com/auth/youtubepartner'])
     	->redirect();
     }
 
@@ -68,22 +65,19 @@ class login extends Controller
 
 	        }
 
-		    $url = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$user['token'].'&part=id&mine=true';
-		    
-		    $ch = new curl;
-		    $result = $ch->connect($url);
+		    // $url = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$user['token'].'&part=id&mine=true';
+		    // $url = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$user['token'].'&part=snippet,statistics&mine=true';
 
-		    var_dump($result);
+		    // $ch = new curl;
+		    // $result = $ch->connect($url);
 
-		    // var_dump(json_encode($channel));
+		    // var_dump($result);
 	        
-	        //data login from google
-	        $data['session'] = DB::table('user_account')->where('idGoogle', $user['id'])->first([ 'idGoogle', 'token']);
+	        // //data login from google
+	        $data['session'] = DB::table('user_account')->where('idGoogle', $user['id'])->first(['idUser', 'idGoogle', 'token']);
 
 	        session(json_decode(json_encode($data['session']), true));
 
-	        // var_dump($user);
-	        // var_dump($data['session']);
 	        return redirect('/profile');
         }
     }

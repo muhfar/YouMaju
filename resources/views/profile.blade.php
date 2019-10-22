@@ -80,15 +80,15 @@
         <div class="row align-items-center justify-content-center text-center">
           
           <div class="profile" data-aos="fade-up" data-aos-delay="400">
-          <img src="{{asset('images/person_1.jpg')}}">
+          <img src="<?= $user['profilePic']?>">
           <div>
-            <h2 class="text-white font-weight-light font-weight-bold">Cristine 
+            <h2 class="text-white font-weight-light font-weight-bold"><?= $user['nama'] ?>
                       <a href="#"> <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#modalLoginAvatar"></i></a>
                       </h2>
           </div>
           <div class="subs">
             <p class="breadcrumb-custom">  
-              <img src="{{asset('images/youtube.png')}}"><a>17jt</a><a> Subscriber</a></p>
+              <img src="{{asset('images/youtube.png')}}"><a><?= $user['subsCount']?></a><a> Subscriber</a></p>
         </div>           
           </div>
         </div>
