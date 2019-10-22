@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
-use Socialite;
 use Illuminate\Support\Arr;
+
+use Socialite;
+use Google_Client;
+use Google_Service_YouTube;
 
 
 class login extends Controller
@@ -57,7 +60,7 @@ class login extends Controller
 
 	        if($user_db){
 	        	//save data user from DB to session
-	        	// $data['user'] = DB::table('user_account')->where('idGoogle', $user['id'])->first();
+	        	$data['user'] = DB::table('user_account')->where('idGoogle', $user['id'])->first();
 
 	        	//DB update token
 	        	DB::table('user_account')->where('idGoogle', $user['id'])->update(['token' => $user['token'] ]);
@@ -75,18 +78,31 @@ class login extends Controller
 	        	//insert data to DB if not exist
 	        	$data['user']['idUser'] = DB::table('user_account')->insertGetId($data['user']);
 
-	        	
 	        }
+
+	        $google_client_token = [
+		        'access_token' => $user['token'],
+		        'refresh_token' => $user['refreshToken'],
+		        'expires_in' => $user['expiresIn']
+		    ];
+
+		    $client = new Google_Client();
+		    $client->setDeveloperKey(env('GOOGLE_API_KEY'));
+		    $client->setAccessToken(json_encode($google_client_token));
+
+		    $youtube = new Google_Service_YouTube($client);
+		    $channel = $youtube->channels->listChannels(array('snippet','statistics'), array('mine' => true));
+
+		    var_dump($channel);
 	        
 	        //data login from google
-	        $data['session'] = DB::table('user_account')->where('idGoogle', $user['id'])->first(['idUser', 'idGoogle', 'token']);
+	        // $data['session'] = DB::table('user_account')->where('idGoogle', $user['id'])->first(['idUser', 'idGoogle', 'token']);
 
-	        session(json_decode(json_encode($data['session']), true));
+	        // session(json_decode(json_encode($data['session']), true));
 
 	        // var_dump($user);
 	        // var_dump($data['session']);
-	        return redirect('/profile');
-	        // return redirect('/');
+	        // return redirect('/profile');
         }
     }
 
