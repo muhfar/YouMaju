@@ -48,7 +48,7 @@ class login extends Controller
 	        	$data['user'] = DB::table('user_account')->where('idGoogle', $user['id'])->first();
 
 	        	//DB update token
-	        	DB::table('user_account')->where('idGoogle', $user['id'])->update(['token' => $user['token'] ]);
+	        	DB::table('user_account')->where('idGoogle', $user['id'])->update(['token' => $user['token'], 'refreshToken' =>$user['refreshToken'] ]);
 
 	        }else{
 	        	$data['user'] = array(

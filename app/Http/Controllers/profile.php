@@ -12,19 +12,53 @@ class profile extends Controller
     public function index()
     {	
     	if(session()->has('idUser')){
-    		$data['user'] = session()->all();
+    		$data['session'] = session()->all();
 
-    		$url = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['user']['token'].'&part=snippet,statistics&mine=true';
+    		$url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,statistics&mine=true';
 
-        	$ch = new curl;
-		    $result = $ch->connect($url);
+        	$result = $this->exec_curl($url_userData);
 
-		    // var_dump($result);
+            // var_dump($result);
+            
             $data['user'] =  array(
+                'idChannelYoutube' => $result['items'][0]['id'],
                 'nama' => $result['items'][0]['snippet']['title'],
                 'profilePic' => $result['items'][0]['snippet']['thumbnails']['medium']['url'],
                 'subsCount' => $result['items'][0]['statistics']['subscriberCount']
                  );
+
+            //Update or insert data channel from user
+            DB::table('channel')->updateOrInsert(['idChannelYoutube' => $result['items'][0]['id']] , $data['user']);
+
+            //get idChannel to save idChannel to table Data User
+            $idChannel = DB::table('channel')->where('idChannelYoutube', $result['items'][0]['id'])->value('idChannel');
+
+            //Insert idChannel to table Data User
+            DB::table('user_account')->where('idUser', $data['session']['idUser'])->update(['idChannel' => $idChannel]);
+
+            // get id Video from account User
+            $url_idVideo = 'https://www.googleapis.com/youtube/v3/search?part=id&forMine=true&maxResults=9&order=date&type=video&access_token='.$data['session']['token'];
+            $result_idVideo = $this->exec_curl($url_idVideo);
+
+            foreach ($result_idVideo['items'] as $key) {
+                $idVideo[] = $key['id']['videoId'];
+            }
+
+            //get Video from Id video
+            $url_getVideo = 'https://www.googleapis.com/youtube/v3/videos?access_token='.$data['session']['token'].'&part=player&id=';
+
+            foreach ($idVideo as $key) {
+                $url_getVideo .= $key.',';
+            }
+
+            $result_getVideo = $this->exec_curl($url_getVideo);
+
+            foreach ($result_getVideo['items'] as $key) {
+                $data['embedVideo'][] = $key['player']['embedHtml'];
+            }
+
+            // var_dump($result_idVideo);
+            // var_dump($data['session']);
     		return view('profile', $data);
     	}else{
     		return redirect('/');
@@ -34,8 +68,19 @@ class profile extends Controller
 
     public function logout()
     {
-		session()->flush();
+        $url = 'https://accounts.google.com/o/oauth2/revoke?token='. session()->token();
+        $this->exec_curl($url);
+
+        session()->flush();
 
     	return redirect('/');
+    }
+
+    public function exec_Curl($url)
+    {
+        $ch = new curl;
+        $result = $ch->connect($url);
+
+        return $result;
     }
 }

@@ -113,7 +113,7 @@
           <div class="col">
             <div class="form-group">
               <h5><label>Nama</label></h5>
-               <input class="form-control" type="text" name="username" placeholder="Cristine" value="Cristine">
+               <input class="form-control" type="text" name="username" placeholder="Nama Lengkap" value="<?= $user['nama']?>">
              </div>
             </div>
                
@@ -149,87 +149,22 @@
 </div>    
   
     <div class=" modal-body ">
-      
+    
     <div class="creator_section_wrapper"><h2>Video</h2>
     <div class="row">   
+    <?php foreach($embedVideo as $video):?>  
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="h-100">
-        <a href="#"><iframe class="card-img-top"
-            src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe></a>
-        <div class="card-body">
+              <?= $video;?>
+        <!-- <div class="card-body">
           <h4 class="card-title">
             <a href="#">Project One</a>
           </h4>
           <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-        </div>
+        </div> -->
       </div>
     </div>
-    <div class="col-lg-4 col-sm-6 mb-4">
-      <div class="h-100">
-        <a href="#"><iframe class="card-img-top"
-            src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project One</a>
-          </h4>
-          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 mb-4">
-      <div class="h-100">
-        <a href="#"><iframe class="card-img-top"
-            src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project One</a>
-          </h4>
-          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 mb-4">
-      <div class="h-100">
-        <a href="#"><iframe class="card-img-top"
-            src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project One</a>
-          </h4>
-          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 mb-4">
-      <div class="h-100">
-        <a href="#"><iframe class="card-img-top"
-            src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project One</a>
-          </h4>
-          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 mb-4">
-      <div class="h-100">
-        <a href="#"><iframe class="card-img-top"
-            src="https://www.youtube.com/embed/PVcUT3TVmWI">
-              </iframe></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project One</a>
-          </h4>
-          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-        </div>
-      </div>
-    </div>
+    <?php endforeach;?>
   </div>
     </div>     
     </div>

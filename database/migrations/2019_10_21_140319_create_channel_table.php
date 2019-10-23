@@ -15,8 +15,10 @@ class CreateChannelTable extends Migration
     {
         Schema::create('channel', function (Blueprint $table) {
             $table->bigIncrements('idChannel');
-            $table->bigInteger('idChannelYoutube');
-            $table->bigInteger('subscriber');
+            $table->String('idChannelYoutube');
+            $table->String('nama');
+            $table->bigInteger('subsCount');
+            $table->String('profilePic');
             $table->timestamps();
         });
     }
