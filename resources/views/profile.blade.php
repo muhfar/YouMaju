@@ -1,3 +1,4 @@
+    
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -69,6 +70,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Pesan</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Keluar</a>
+        </li>
         </li>
       </ul>
     </div>
@@ -88,7 +92,7 @@
           </div>
           <div class="subs">
             <p class="breadcrumb-custom">  
-              <img src="{{asset('images/youtube.png')}}"><a><?= $user['subsCount']?></a><a> Subscriber</a></p>
+             <h4> <i class="fa fa-youtube" aria-hidden="true"></i><a><?= $user['subsCount']?></a><a> Subscriber</a></p>
         </div>           
           </div>
         </div>
@@ -103,7 +107,7 @@
 
       <!--Header-->
       <div class="modal-header">
-        <img src="{{asset('images/person_1.jpg')}}" alt="avatar" class="rounded-circle img-responsive">       
+        <img src="<?= $user['profilePic']?>" alt="avatar" class="rounded-circle img-responsive">       
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="false">&times;</span>   
          
