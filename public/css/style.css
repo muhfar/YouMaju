@@ -3,7 +3,6 @@
   max-width: 280px;
   height: 220px;
   margin-top: 20px;
-  margin-left: 35px;
 }
 
 .hero-banner h2 {
@@ -719,6 +718,7 @@ font-weight: 200; }
       padding: 5em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
+    
 
 .site-section-heading {
   position: relative;
