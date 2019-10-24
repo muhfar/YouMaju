@@ -71,7 +71,7 @@
           <a class="nav-link" href="#">Pesan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Keluar</a>
+          <a class="nav-link" href=" {{ url('/logout') }}">Keluar</a>
         </li>
         </li>
       </ul>
@@ -154,10 +154,11 @@
   
     <div class=" modal-body ">
     
-    <div class="creator_section_wrapper"><h2>Video</h2>
+    <div class="creator_section_wrapper">
     <div class="row">   
     <div class="  col-lg-12 col-sm-6 mb-4">
       <div class=" videoo">
+      <h2>Video</h2>
       <?php foreach($embedVideo as $video):?>  
               <?= $video;?>
         <!-- <div class="card-body">
