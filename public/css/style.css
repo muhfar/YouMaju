@@ -1,4 +1,10 @@
 /* Import Font */
+.videoo iframe{
+  max-width: 280px;
+  height: 220px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
 
 .hero-banner h2 {
   text-transform: uppercase;
@@ -214,6 +220,12 @@
   .bg-shape::before {
     display: none;
   }
+  .videoo iframe{
+    max-width: 200px;
+    height: 160px;
+    margin-top: 20px;
+  }
+  
 }
 
 .bg-shape::after {
@@ -495,6 +507,12 @@ height :70px; float: right;}
   .kanan{
     padding-left: 140px;
     margin-right: 0px;
+  } .videoo iframe{
+    max-width: 230px;
+    min-width: 210px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: auto;
   }
   .banner h5{
     margin-bottom: 5px;

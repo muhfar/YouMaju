@@ -156,9 +156,9 @@
     
     <div class="creator_section_wrapper"><h2>Video</h2>
     <div class="row">   
-    <?php foreach($embedVideo as $video):?>  
-    <div class="col-lg-4 col-sm-6 mb-4">
-      <div class="h-100">
+    <div class="  col-lg-12 col-sm-6 mb-4">
+      <div class=" videoo">
+      <?php foreach($embedVideo as $video):?>  
               <?= $video;?>
         <!-- <div class="card-body">
           <h4 class="card-title">
@@ -166,9 +166,11 @@
           </h4>
           <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
         </div> -->
+        <?php endforeach;?>
       </div>
+    
     </div>
-    <?php endforeach;?>
+
   </div>
     </div>     
     </div>
