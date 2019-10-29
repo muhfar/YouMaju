@@ -49,6 +49,9 @@ Route::get('/content_detail', function () {
     return view('content_detail');
 });
 
+Route::get('/search', function () {
+    return view('search');
+});
 
 
 
