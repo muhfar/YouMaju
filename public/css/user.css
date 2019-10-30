@@ -23,6 +23,7 @@ p {
 
 nav img {
     height: 50px;
+    margin-left: -10px;
 }
 
 .navbar-side ul {
