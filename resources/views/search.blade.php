@@ -10,13 +10,14 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css')}}">
   <link rel="stylesheet" type="text/css" href="{{ asset('/css/user.css')}}">
   <link rel="stylesheet" type="text/javascript" href="{{ asset('/js/myscript.js')}}">
-  <link rel="stylesheet" href="css/templatemo-main.css">
+  <link rel="stylesheet" href="{{ asset('/css/templatemo-main.css')}}">
+
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-  <title>Content Detail</title>
+  <title>Search</title>
 </head>
 
 <body>
@@ -54,19 +55,17 @@
 
       
       <div class="row">
-      <div class="col-md-7">
-            <div class="well well-sm">
+      <div class="col-md-5">
+            <div class="" style="width :240px">
                 <div class="media">
                     <a class="thumbnail pull-left" href="#">
                         <img class="media-object" src="{{asset('images/person_1.jpg')}}">
                     </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">First Last Name</h4>
-                		<p><span class="label label-info">888 photos</span> <span class="label label-warning">150 followers</span></p>
+                    <div>
+                        <h6 style="color: white; margin-left:5px">First Last Name</h6>
+                		<p style="color: white; margin-left:5px">888 Video</p> <p style="color: white; margin-left:5px">150 Subscribers</span></p>
                         <p>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-comment"></span> Message</a>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-heart"></span> Favorite</a>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-ban-circle"></span> Unfollow</a>
+                            <a href="#" style="color: #ffff00;margin-left:5px">Subscribe</a>
                         </p>
                     </div>
                 </div>
@@ -77,89 +76,49 @@
 
       <hr>
 
-      <!-- Project Two -->
+     
       <div class="row">
-      <div class="col-md-7">
-            <div class="well well-sm">
+      <div class="col-md-5">
+            <div class="" style="width :240px">
                 <div class="media">
                     <a class="thumbnail pull-left" href="#">
                         <img class="media-object" src="{{asset('images/person_1.jpg')}}">
                     </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">First Last Name</h4>
-                		<p><span class="label label-info">888 photos</span> <span class="label label-warning">150 followers</span></p>
+                    <div>
+                        <h6 style="color: white; margin-left:5px">First Last Name</h6>
+                		<p style="color: white; margin-left:5px">888 Video</p> <p style="color: white; margin-left:5px">150 Subscribers</span></p>
                         <p>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-comment"></span> Message</a>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-heart"></span> Favorite</a>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-ban-circle"></span> Unfollow</a>
+                            <a href="#" style="color: #ffff00;margin-left:5px">Subscribe</a>
                         </p>
                     </div>
                 </div>
             </div>
-        </div></div>
+        </div>
+        </div>
       <!-- /.row -->
-
       <hr>
 
-      <!-- Project Three -->
+      
       <div class="row">
-      <div class="col-md-7">
-            <div class="well well-sm">
+      <div class="col-md-5">
+            <div class="" style="width :240px">
                 <div class="media">
                     <a class="thumbnail pull-left" href="#">
                         <img class="media-object" src="{{asset('images/person_1.jpg')}}">
                     </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">First Last Name</h4>
-                		<p><span class="label label-info">888 photos</span> <span class="label label-warning">150 followers</span></p>
+                    <div>
+                        <h6 style="color: white; margin-left:5px">First Last Name</h6>
+                		<p style="color: white; margin-left:5px">888 Video</p> <p style="color: white; margin-left:5px">150 Subscribers</span></p>
                         <p>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-comment"></span> Message</a>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-heart"></span> Favorite</a>
-                            <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-ban-circle"></span> Unfollow</a>
+                            <a href="#" style="color: #ffff00;margin-left:5px">Subscribe</a>
                         </p>
                     </div>
                 </div>
             </div>
-        </div></div>
-      <!-- /.row -->
+        </div>
+        </div>
 
-      <hr>
-
-
-      <!-- /.row -->
-
-      <hr>
-
-      <!-- Pagination -->
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-        
-   </div>
-</div>
-</div>
+</div></div></div>
 </body>
 
 </html>
