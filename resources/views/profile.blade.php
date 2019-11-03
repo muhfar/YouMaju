@@ -64,11 +64,14 @@
                 <span class="sr-only">(current)</span>
               </a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Notifikasi</a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Pesan</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/search') }}">Cari</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href=" {{ url('/logout') }}">Keluar</a>
@@ -92,8 +95,10 @@
           </div>
           <div class="subs">
             <p class="breadcrumb-custom">  
-             <h4> <i class="fa fa-youtube" aria-hidden="true"></i><a><?= $user['subsCount']?></a><a> Subscriber</a></p>
-        </div>           
+             <h4> <i class="fa fa-youtube" aria-hidden="true"></i><a><?= $user['subsCount']?></a><a> Subscriber</a>
+            </p>
+            <button type="button" class="btn btn-warning btn-subscribe">Subscribe</button>
+          </div>           
           </div>
         </div>
       </div>

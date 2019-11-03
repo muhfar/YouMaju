@@ -14,18 +14,21 @@ class profile extends Controller
     	if(session()->has('idUser')){
     		$data['session'] = session()->all();
 
-    		$url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,statistics&mine=true';
+    		$url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,contentDetails,statistics&mine=true';
 
         	$result = $this->exec_curl($url_userData);
 
             // var_dump($result);
             
             $data['user'] =  array(
+                'etag' => $result['items'][0]['etag'],
                 'idChannelYoutube' => $result['items'][0]['id'],
                 'nama' => $result['items'][0]['snippet']['title'],
                 'profilePic' => $result['items'][0]['snippet']['thumbnails']['medium']['url'],
+                'playlistVideo' => $result['items'][0]['contentDetails']['relatedPlaylists']['uploads'],
+                'videoCount' => $result['items'][0]['statistics']['videoCount'],
                 'subsCount' => $result['items'][0]['statistics']['subscriberCount']
-                 );
+            );
 
             //Update or insert data channel from user
             DB::table('channel')->updateOrInsert(['idChannelYoutube' => $result['items'][0]['id']] , $data['user']);
@@ -37,11 +40,11 @@ class profile extends Controller
             DB::table('user_account')->where('idUser', $data['session']['idUser'])->update(['idChannel' => $idChannel]);
 
             // get id Video from account User
-            $url_idVideo = 'https://www.googleapis.com/youtube/v3/search?part=id&forMine=true&maxResults=9&order=date&type=video&access_token='.$data['session']['token'];
+            $url_idVideo = 'https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId='. $data['user']['playlistVideo'] .'&access_token='.$data['session']['token'];
             $result_idVideo = $this->exec_curl($url_idVideo);
 
             foreach ($result_idVideo['items'] as $key) {
-                $idVideo[] = $key['id']['videoId'];
+                $idVideo[] = $key['contentDetails']['videoId'];
             }
 
             //get Video from Id video

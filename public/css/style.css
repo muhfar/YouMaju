@@ -304,6 +304,10 @@ section.contact h2 {
   padding: 5px 5px;
 }
 /* profile */
+.btn-subscribe {
+  border-radius: 50px;
+  padding: 5px 20px;
+}
 .subss img{
   width: 5%;
  

@@ -53,70 +53,38 @@
           </div>               
       <!-- Page Heading -->
 
+      <?php foreach ($channel as $channel): ?>
+        <div class="row">
+          <div class="col-md-5">
+            <a href="#">
+              <div class="" style="width: 240px;">
+                  <div class="media">
+                      <a class="thumbnail pull-left" href="{{ url('/search') }}">
+                          <img class="media-object" src="<?= $channel['profilePic']?>">
+                      </a>
+                      <div>
+                          <h6 style="color: white; margin-left:5px">
+                            <?= $channel['nama'] ?>
+                          </h6>
+                      <p style="color: white; margin-left:5px"><?= $channel['videoCount']?> Video</p> 
+                      <p style="color: white; margin-left:5px"><?= $channel['subsCount']?> Subscribers</p>
+                          <p>
+                              <a class="btn" href="#" style="color: #ffff00;margin-left:5px">Subscribe</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+            </a>
+          </div>
+        </div> 
+        <hr> 
+      <?php endforeach ?>
       
-      <div class="row">
-      <div class="col-md-5">
-            <div class="" style="width :240px">
-                <div class="media">
-                    <a class="thumbnail pull-left" href="#">
-                        <img class="media-object" src="{{asset('images/person_1.jpg')}}">
-                    </a>
-                    <div>
-                        <h6 style="color: white; margin-left:5px">First Last Name</h6>
-                		<p style="color: white; margin-left:5px">888 Video</p> <p style="color: white; margin-left:5px">150 Subscribers</span></p>
-                        <p>
-                            <a href="#" style="color: #ffff00;margin-left:5px">Subscribe</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
       <!-- /.row -->
 
-      <hr>
+      
 
      
-      <div class="row">
-      <div class="col-md-5">
-            <div class="" style="width :240px">
-                <div class="media">
-                    <a class="thumbnail pull-left" href="#">
-                        <img class="media-object" src="{{asset('images/person_1.jpg')}}">
-                    </a>
-                    <div>
-                        <h6 style="color: white; margin-left:5px">First Last Name</h6>
-                		<p style="color: white; margin-left:5px">888 Video</p> <p style="color: white; margin-left:5px">150 Subscribers</span></p>
-                        <p>
-                            <a href="#" style="color: #ffff00;margin-left:5px">Subscribe</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-      <!-- /.row -->
-      <hr>
-
-      
-      <div class="row">
-      <div class="col-md-5">
-            <div class="" style="width :240px">
-                <div class="media">
-                    <a class="thumbnail pull-left" href="#">
-                        <img class="media-object" src="{{asset('images/person_1.jpg')}}">
-                    </a>
-                    <div>
-                        <h6 style="color: white; margin-left:5px">First Last Name</h6>
-                		<p style="color: white; margin-left:5px">888 Video</p> <p style="color: white; margin-left:5px">150 Subscribers</span></p>
-                        <p>
-                            <a href="#" style="color: #ffff00;margin-left:5px">Subscribe</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
 
 </div></div></div>
 </body>
