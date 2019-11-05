@@ -48,51 +48,62 @@
           </div>
         </div>
 
-        <div style="color:#343a40; font-size:20px;">
-          <p align="justify">YouMaju dengan ceritamu, kemudian bagikan ke yang lain Untuk membuat dampak positif.
+        <div class="row">
+
+          <div class="col-md-5">
+            <img class="img-fluid" src="{{asset('images/makeimpact.jpg')}}" alt="">
+          </div>
+
+          <div class="col-md-7">
+            <div class="text-y">
+            <p align="justify">YouMaju dengan ceritamu, kemudian bagikan ke yang lain Untuk membuat dampak positif.
             Majuers pasti content yang kamu buat tentunya punya dampak yang berpengaruh bagi setiap orang. Salah
             satu yang harus diperhatikan adalah bagaimana majuers membagikan content majuers sesuai dengan
             porsinya. Di YouMaju content yang kamu ciptakan haruslah mempunyai dampak yang postive tentunya bagi
             setiap orang. Jadi dengan adanya YouMaju majuers sudah tidak ragu lagi dengan isi content yang dimilki
             YouMaju. </p>
-        </div>
+	  </div>
+          </div>
+
+          </div>
+      
       </div>
     </div>
 
     <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
+          <div class="container">
             <div class="row">
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">YouMaju</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">Tentang Kami</a></li>
-                  <li><a href="#">Kontak Kami</a></li>
-                </ul>
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h2 class="footer-heading mb-4">YouMaju</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Tentang Kami</a></li>
+                      <li><a href="#">Kontak Kami</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
+                     <a href="https://www.instagram.com/youmaju_/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                     <a href="https://twitter.com/YoumajuC" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                     <a href="https://www.linkedin.com/in/youmaju-com-ba6021196/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>  
+                    </div>
+                </div>
               </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
-                <a href="https://www.instagram.com/youmaju_/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="row col-md-4 text-center">
-            <div class="col-md-12">
-              <div class="border-top">
+              <div class="row col-md-4 text-center">
+              <div class="col-md-12">
+                <div class="border-top">
                 <p>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy; YouMaju <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; YouMaju <script>document.write(new Date().getFullYear());</script>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
-              </div>
+                </div>
             </div>
-
+              
+            </div>
           </div>
-        </div>
-    </footer>
+        </footer>
 
 
     <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>

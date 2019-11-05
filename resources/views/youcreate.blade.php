@@ -48,7 +48,14 @@
           </div>
         </div>
 
-        <div class="paragraftentang" style="color:#343a40; font-size:20px;">
+        <div class="row">
+
+          <div class="col-md-5">
+            <img class="img-fluid" src="{{asset('images/youcreate.jpg')}}" alt="">
+          </div>
+
+          <div class="col-md-7">
+          <div class="text-y">
           <p align="justify">YouMaju menciptakan content yang positive, menarik, dan impacfull di YouMaju.
             Majuers tentunya sudah tidak asing lagi dengan content creator tentunya, tapi apakah majuers tahu bahwa
             menciptakan sebuah content menarik itu ada trik dan tipsnya? majuers harus tahu dahulu bagaimana
@@ -57,6 +64,10 @@
             memberikan pembelajaran yang bertahap pada tiap sesinya sehingga majuers dapat dengan cepat
             menciptkan content yang memiliki viewer terbanyak pada kelasnya.</p>
         </div>
+          </div>
+
+          </div>
+      
       </div>
     </div>
 

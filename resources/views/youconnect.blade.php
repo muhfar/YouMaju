@@ -47,17 +47,27 @@
               Mau tahu bagaimana YouMaju mengkoneksikan content creator?</p>
           </div>
         </div>
+        
+        <div class="row">
 
-        <div style="color:#343a40; font-size:20px;">
-          <p align="justify">YouMaju menghubungkan sesama content creator, Support dan berikan feedback anda.
+          <div class="col-md-5">
+            <img class="img-fluid" src="{{asset('images/youconnect.jpg')}}" alt="">
+          </div>
+
+          <div class="col-md-7">
+            <div class="text-y">
+            <p align="justify">YouMaju menghubungkan sesama content creator, Support dan berikan feedback anda.
             Majuers harus tahu bahwa dalam menciptakan content, majuers perlu adanya partner atau kerja sama dalam
             menciptakan content yang menarik dan berdampak. YouMaju menghubungkan para content creator untuk
             saling support dengan cara memanfaatkan tools sosial media YouMaju. Jadi majuers jangan ragu untuk
             menggunakan YouMaju karena majuers bisa mendapatkan feedback berupa kemudahan promosi content
             majuers.
-
           </p>
-        </div>
+	  </div>
+          </div>
+
+          </div>
+      
       </div>
     </div>
 
