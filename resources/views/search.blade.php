@@ -44,23 +44,23 @@
   <!-- end navbar -->
 
   
-  <div class="slides">
-          <div class="slide">
+ 
+          <div class="search-user" style="width:80%; float: right">
             <div class="content first-content">   
                         <!-- Search form -->
-          <div class="md-form mt-0"style="margin-bottom: 20px">
+          <div class="md-form mt-0"style="margin-bottom: 20px; width:90%">
             <input class="form-control" type="text" placeholder="Search" aria-label="Search">
           </div>               
       <!-- Page Heading -->
-
+      <div class="row d-flex">
       <?php foreach ($channel as $channel): ?>
-        <div class="row">
-          <div class="col-md-5">
+      
+          <div class="col-lg-4 col-md-6 justify-content-around">
             <a href="#">
-              <div class="" style="width: 240px;">
+              <div class="">
                   <div class="media">
                       <a class="thumbnail pull-left" href="{{ url('/search') }}">
-                          <img class="media-object" src="<?= $channel['profilePic']?>">
+                          <img class="media-object" style="height:100px; width: 100px;margin:0 5px" src="<?= $channel['profilePic']?>">
                       </a>
                       <div>
                           <h6 style="color: white; margin-left:5px">
@@ -69,24 +69,25 @@
                       <p style="color: white; margin-left:5px"><?= $channel['videoCount']?> Video</p> 
                       <p style="color: white; margin-left:5px"><?= $channel['subsCount']?> Subscribers</p>
                           <p>
-                              <a class="btn" href="#" style="color: #ffff00;margin-left:5px">Subscribe</a>
+                              <a class="btn btn-primary btn-sm ml-1" href="#">Subscribe</a>
                           </p>
                       </div>
                   </div>
               </div>
             </a>
           </div>
-        </div> 
+          
+        
         <hr> 
       <?php endforeach ?>
-      
+      </div> 
       <!-- /.row -->
 
       
 
      
 
-</div></div></div>
+</div></div>
 </body>
 
 </html>
