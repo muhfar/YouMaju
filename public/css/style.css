@@ -526,7 +526,7 @@ height :70px; float: right;}
     min-width: 210px;
     height: 160px;
     margin-top: 20px;
-    margin-left: auto;
+    margin-left: 20px;
   }
   .banner h5{
     margin-bottom: 5px;
@@ -2163,6 +2163,10 @@ section.contact h2 {
 .subss img{
   width: 5%;
  
+}
+.subs .subsCount{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .fa {
   color: #ffff00;

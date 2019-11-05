@@ -95,7 +95,7 @@
           </div>
           <div class="subs">
             <p class="breadcrumb-custom">  
-             <h4> <i class="fa fa-youtube" aria-hidden="true"></i><a><?= $user['subsCount']?></a><a> Subscriber</a>
+             <h4> <i class="fa fa-youtube" aria-hidden="true"></i> <p class="subsCount"><?= $user['subsCount']?> Subscriber</p>
             </p>
             <button type="button" class="btn btn-warning btn-subscribe">Subscribe</button>
           </div>           
