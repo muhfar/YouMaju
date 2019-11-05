@@ -186,7 +186,6 @@ nav .mini-logo {
 
 nav .logo {
 	margin-top: 45px;
-	padding: 0px 20px;
 }
 
 nav .logo img {
@@ -280,7 +279,6 @@ nav a:hover {
 
 .slides .slide:nth-child(1) {
   background: #131212;
-  height: 150vh;
   width: -webkit-fill-available;
 }
 .slides .slide:nth-child(2) {
@@ -307,7 +305,7 @@ nav a:hover {
 
 
 .first-content {
-	padding: 100px;
+	padding: 100px 20px;
 	text-align: left;
 }
 

@@ -45,6 +45,10 @@ Route::get('/youconnect', function () {
     return view('youconnect');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 Route::get('/content_detail', function () {
     return view('content_detail');
 });
