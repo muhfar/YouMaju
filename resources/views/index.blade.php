@@ -83,9 +83,9 @@
           <div class="container">
             
             <div class="row justify-content-center mb-5">
-              <div class="col-md-7 text-center border-primary jodol">
+              <div class="col-md-7 text-center border-primary tulisan jodol">
                 <h1 class="mb-0" style="color:#3c3c32">YouMaju</h1>
-                <p class="color-black-opacity-5" style="color:#343a40">Apa Aja Sih yang Ada di YouMaju?</p>
+                <p class="" style="color:#343a40">Apa Aja Sih yang Ada di YouMaju?</p>
               </div>
             </div>
             <div class="row align-items-stretch">
@@ -108,7 +108,7 @@
                   </span></div>
                   <div class="tulisan">
                     <h3>YouConnect</h3>
-                    <p>YouMaju menghubungkan sesama content creator, Support dan berikan feedback anda&hellip;</p>
+                    <p>YouMaju menghubungkan sesama content creator, Support dan berikan feedback&hellip;</p>
                     <p class="mb-0"><a href="#" class="btn-primary  btn-outline btn-x " style="color:#343a40">Pelajari Lebih Lanjut</a></p>
                   </div>
                 </div>
