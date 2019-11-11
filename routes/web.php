@@ -28,7 +28,11 @@ Route::get('/youmakeimpact', function () {
     return view('youmakeimpact');
 });
 
-Route::get('/profile', 'profile@index');
+// Route::get('/profile', 'profile@index');
+
+Route::get('/profile/{idChannel}', 'profile@index');
+Route::get('/profile/subscribe/{idChannel}', 'profile@subscribe');
+Route::get('/profile/unsubscribe/{idChannel}', 'profile@unsubscribe');
 
 Route::get('/logout', 'profile@logout');
 

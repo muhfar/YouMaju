@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
@@ -23,17 +23,26 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <meta charset="utf-8">
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> --> 
 
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="{{asset('css/aos.css')}}">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     
   </head>
   <body>
+@if (session('status-success'))
+    <div class="alert alert-success">
+        {{ session('status-success') }}
+    </div>
+@else
+    <div class="alert alert-error">
+        {{ session('status-failed') }}
+    </div>
+@endif
 
   <div class="site-wrap">
 
@@ -90,14 +99,14 @@
           <img src="<?= $user['profilePic']?>">
           <div>
             <h2 class="text-white font-weight-light font-weight-bold"><?= $user['nama'] ?>
-                      <a href="#"> <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#modalLoginAvatar"></i></a>
-                      </h2>
+              <a href="#"> <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#modalLoginAvatar"></i></a>
+            </h2>
           </div>
           <div class="subs">
-            <p class="breadcrumb-custom">  
-             <h4> <i class="fa fa-youtube" aria-hidden="true"></i> <p class="subsCount"><?= $user['subsCount']?> Subscriber</p>
-            </p>
-            <button type="button" class="btn btn-warning btn-subscribe">Subscribe</button>
+            <h4 class="breadcrumb-custom">  
+             <i class="fa fa-youtube" aria-hidden="true"></i> <?= $user['subsCount']?> Subscriber
+            </h4>
+            <a type="button" class="btn btn-warning btn-subscribe" href="{{ url('profile/subscribe')}}/<?= $user['idChannelYoutube'] ?>">Subscribe</a>
           </div>           
           </div>
         </div>
@@ -161,18 +170,12 @@
     
     <div class="creator_section_wrapper">
     <div class="row">   
-    <div class="  col-lg-12 col-sm-6 mb-4">
-      <div class=" videoo">
+    <div class="col-sm-12 mb-4">
       <h2>Video</h2>
+      <div class="video-content">
       <?php foreach($embedVideo as $video):?>  
-              <?= $video;?>
-        <!-- <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project One</a>
-          </h4>
-          <div class="meta mb-4 subss">  <img src="{{asset('images/youtube.png')}}"> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-        </div> -->
-        <?php endforeach;?>
+        <?= $video;?>
+      <?php endforeach;?>
       </div>
     
     </div>
@@ -238,19 +241,19 @@
     </footer>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/aos.js"></script>
+  <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+  <script src="{{asset('js/jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{asset('js/jquery-ui.js')}}"></script>
+  <script src="{{asset('js/popper.min.js')}}"></script>
+  <script src="{{asset('js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+  <script src="{{asset('js/jquery.stellar.min.js')}}"></script>
+  <script src="{{asset('js/jquery.countdown.min.js')}}"></script>
+  <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{asset('js/bootstrap-datepicker.min.js')}}"></script>
+  <script src="{{asset('js/aos.js')}}"></script>
 
-  <script src="js/main.js"></script>
+  <script src="{{asset('js/main.js')}}"></script>
 
   <!-- <script>
     $('#orangeModalSubscription').modal('hide');

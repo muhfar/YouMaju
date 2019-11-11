@@ -9,14 +9,22 @@ use App\Http\Controllers\curl;
 
 class profile extends Controller
 {
-    public function index()
+    private $ch;
+    public function index($idChannel)
     {	
+        $ch = new curl;
+
     	if(session()->has('idUser')){
     		$data['session'] = session()->all();
 
-    		$url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,contentDetails,statistics&mine=true';
+            // if($idChannel == 'my'){
+            
+            // }else{
+            //     $url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,contentDetails,statistics&id='. $idChannel;
+            // }
+            $url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,contentDetails,statistics&id='. $idChannel;
 
-        	$result = $this->exec_curl($url_userData);
+            $result = $ch->connect($url_userData);
 
             // var_dump($result);
             
@@ -30,18 +38,9 @@ class profile extends Controller
                 'subsCount' => $result['items'][0]['statistics']['subscriberCount']
             );
 
-            //Update or insert data channel from user
-            DB::table('channel')->updateOrInsert(['idChannelYoutube' => $result['items'][0]['id']] , $data['user']);
-
-            //get idChannel to save idChannel to table Data User
-            $idChannel = DB::table('channel')->where('idChannelYoutube', $result['items'][0]['id'])->value('idChannel');
-
-            //Insert idChannel to table Data User
-            DB::table('user_account')->where('idUser', $data['session']['idUser'])->update(['idChannel' => $idChannel]);
-
             // get id Video from account User
-            $url_idVideo = 'https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId='. $data['user']['playlistVideo'] .'&access_token='.$data['session']['token'];
-            $result_idVideo = $this->exec_curl($url_idVideo);
+            $url_idVideo = 'https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=10&playlistId='. $data['user']['playlistVideo'] .'&access_token='.$data['session']['token'];
+            $result_idVideo = $ch->connect($url_idVideo);
 
             foreach ($result_idVideo['items'] as $key) {
                 $idVideo[] = $key['contentDetails']['videoId'];
@@ -54,36 +53,115 @@ class profile extends Controller
                 $url_getVideo .= $key.',';
             }
 
-            $result_getVideo = $this->exec_curl($url_getVideo);
+            $result_getVideo = $ch->connect($url_getVideo);
 
             foreach ($result_getVideo['items'] as $key) {
                 $data['embedVideo'][] = $key['player']['embedHtml'];
             }
 
-            // var_dump($result_idVideo);
+            // var_dump($result);
             // var_dump($data['session']);
-    		return view('profile', $data);
+            return view('profile', $data);
+
+    		
     	}else{
-    		return redirect('/');
+    		return redirect('/redirect');
     	}
     	
     }
 
     public function logout()
     {
+        $ch = new curl;
         $url = 'https://accounts.google.com/o/oauth2/revoke?token='. session()->token();
-        $this->exec_curl($url);
+        $ch->connect($url);
 
         session()->flush();
 
     	return redirect('/');
     }
 
-    public function exec_Curl($url)
+    public function subscribe($idChannel)
     {
-        $ch = new curl;
-        $result = $ch->connect($url);
+        if(session()->has('idUser')){
+            $data['session'] = session()->all();
 
-        return $result;
+            $ch = curl_init();
+
+            $url = 'https://www.googleapis.com/youtube/v3/subscriptions?access_token'. $data['session']['token'].'&part=snippet';
+
+            $dataPost['snippet'] = array(
+                'resourceId' => array(
+                    'kind' => 'youtube#channel',
+                    'channelId' => $idChannel
+                )
+            );
+
+            // var_dump(json_encode($data['snippet']));
+            $header = array(
+                'Content-type : application/json', 
+                'Accept : application/json',
+                'Authorization : Bearer ' . $data['session']['token']
+            );
+
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_POST, TRUE);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($dataPost));
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+
+            $result = json_decode(curl_exec($ch), true);
+            curl_close($ch);
+
+            // var_dump($result);
+
+            $channelId = $result['snippet']['resourceId']['channelId'];
+            $kind = $result['kind'];
+            // var_dump($channelId);
+            if(!empty($channelId)){
+                return back()->with('status-success', 'Subcribe Berhasil!');
+            }else{
+                return back()->with('status-failed', 'Subscribe Gagal!');
+            }
+            
+        }else{
+            return redirect('/redirect');
+        }
     }
+
+    public function unsubscribe($idChannel)
+    {
+        if(session()->has('idUser')){
+            $data['session'] = session()->all();
+
+            $ch = new curl;
+
+            $urlId = 'https://www.googleapis.com/youtube/v3/subscriptions?part=id&forChannelId='.$idChannel.'&mine=true&access_token'. $data['session']['token'];
+            $resultId = $ch->connect($urlId);
+
+            var_dump(json_decode($resultId, true));
+            $url = 'https://www.googleapis.com/youtube/v3/subscriptions?id='.$resultId['items'][0]['id'].'&access_token='. $data['session']['token'];
+
+
+            $data['resourceId'] = array(
+                'kind' => 'youtube#channel',
+                'channelId' => $idChannel
+            );
+
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, DELETE);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array( 
+                'Accept : application/json'
+            ));
+
+            $result = curl_exec($ch);
+            curl_close($ch);
+
+            var_dump($result);
+        }else{
+            return redirect('/redirect');
+        }
+    }
+
 }
