@@ -28,8 +28,6 @@ Route::get('/youmakeimpact', function () {
     return view('youmakeimpact');
 });
 
-// Route::get('/profile', 'profile@index');
-
 Route::get('/profile/{idChannel}', 'profile@index');
 Route::get('/profile/subscribe/{idChannel}', 'profile@subscribe');
 Route::get('/profile/unsubscribe/{idChannel}', 'profile@unsubscribe');
@@ -58,6 +56,7 @@ Route::get('/content_detail', function () {
 });
 
 Route::get('/search', 'search@index');
+Route::post('/search', 'search@cariUser');
 
 
 

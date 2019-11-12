@@ -49,7 +49,12 @@
             <div class="content first-content">   
                         <!-- Search form -->
           <div class="md-form mt-0"style="margin-bottom: 20px; width:90%">
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            <form action="/search" method="POST">
+              @csrf
+              <!-- <input type="hidden" name="_token" value="<?php echo csrf_token() ?>"> -->
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search" name="username">
+              <!-- <input class="form-control-sm" type="submit" value="Cari"> -->
+            </form>
           </div>               
       <!-- Page Heading -->
       <div class="row d-flex">

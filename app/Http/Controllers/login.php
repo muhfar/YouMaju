@@ -45,7 +45,7 @@ class login extends Controller
     	$ch = new curl;
 
     	//data login from google
-        $user = Socialite::driver('google')->user();
+        $user = Socialite::driver('google')->stateless()->user();
 
         //transfrom data to array
         $user = json_decode(json_encode($user), true);

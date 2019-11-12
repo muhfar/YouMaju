@@ -143,12 +143,7 @@ class profile extends Controller
 
             // var_dump($resultId);
 
-            $url = 'https://www.googleapis.com/youtube/v3/subscriptions?id=ed3oFWPLKAeMNyB57PSMMHRrXTnW4QinSmY-O-fs0YY&key='. env('GOOGLE_API_KEY') .'&access_token='. $session['token'];
-
-            $data['resourceId'] = array(
-                'kind' => 'youtube#channel',
-                'channelId' => $idChannel
-            );
+            $url = 'https://www.googleapis.com/youtube/v3/subscriptions?id='. $resultId['items'][0]['id'] .'&key='. env('GOOGLE_API_KEY') .'&access_token='. $session['token'];
 
             $ch = curl_init();
 
@@ -160,7 +155,7 @@ class profile extends Controller
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
             curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
 
             $result = json_decode(curl_exec($ch),TRUE);
             $result['httpResponseCode'] = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
