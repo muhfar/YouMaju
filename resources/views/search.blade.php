@@ -65,7 +65,7 @@
               <p style="color: white; margin-left:5px"><?= $channel['videoCount']?> Video</p> 
               <p style="color: white; margin-left:5px"><?= $channel['subsCount']?> Subscribers</p>
               <!-- <a class="btn btn-primary btn-sm ml-1" href="#">Subscribe</a> -->
-              <div class="g-ytsubscribe" data-channelid="<?= $channel['idChannelYoutube']?>" data-layout="default" data-count="hidden"></div>
+             <!--  <div class="g-ytsubscribe" data-channelid="<?= $channel['idChannelYoutube']?>" data-layout="default" data-count="hidden" target="_blank"></div> -->
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ class login extends Controller
         
         if(session()->has('idUser')){
         	// var_dump($data['user']);
-    		return redirect('/profile');	
+    		return redirect('/search');	
     	}else{
 
     		$scopes = array(
@@ -80,10 +80,11 @@ class login extends Controller
 	        $data['session'] = json_decode(json_encode($data['session']), true);
 
 	        //Get Data Channel Youtube User
-		        $url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,contentDetails,statistics&mine=true';
+		        $url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,contentDetails,statistics&mine=true&key='. env('GOOGLE_API_KEY');
 
 		    	$result = $ch->connect($url_userData);
 
+		    	// var_dump($result);
 	            $data['user'] =  array(
 	                'etag' => $result['items'][0]['etag'],
 	                'idChannelYoutube' => $result['items'][0]['id'],

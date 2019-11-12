@@ -38,9 +38,9 @@
     <div class="alert alert-success">
         {{ session('status-success') }}
     </div>
-@else
-    <div class="alert alert-error">
-        {{ session('status-failed') }}
+@elseif(session('status-error'))
+    <div class="alert alert-danger">
+        {{ session('status-error') }}
     </div>
 @endif
 
@@ -106,7 +106,18 @@
             <h4 class="breadcrumb-custom">  
              <i class="fa fa-youtube" aria-hidden="true"></i> <?= $user['subsCount']?> Subscriber
             </h4>
-            <a type="button" class="btn btn-warning btn-subscribe" href="{{ url('profile/subscribe')}}/<?= $user['idChannelYoutube'] ?>">Subscribe</a>
+            <!-- Button Subscribe -->
+            @if($subscribe['subscribe'])
+              <a type="button" class="btn btn-dark btn-subscribe" href="{{ url('profile/unsubscribe')}}/<?= $user['idChannelYoutube'] ?>">Disubscribe</a>
+            @else
+              <a type="button" class="btn btn-warning btn-subscribe" href="{{ url('profile/subscribe')}}/<?= $user['idChannelYoutube'] ?>">Subscribe</a>
+            @endif
+            <!-- Text Subscribing -->
+            @if($subscribe['subscribing'])
+              <h6 class="text-following"><?= $user['nama'] ?> telah Subscribe anda</h6>
+            @else
+              <h6 class="text-following mt-1"><?= $user['nama'] ?> belum Subscribe anda</h6>
+            @endif
           </div>           
           </div>
         </div>
