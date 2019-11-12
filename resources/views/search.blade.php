@@ -36,8 +36,8 @@
           <ul>
             <li><a href="#"><i class="fa fa-home"></i> <em>Home</em></a></li>
             <li><a href="#"><i class="fa fa-search"></i> <em>Search</em></a></li>
-            <li><a href="#"><i class="fa fa-book-reader"></i> <em>Story</em></a></li>
-            <li><a href="#"><i class="fa fa-video"></i> <em>My Videos</em></a></li>
+            <!-- <li><a href="#"><i class="fa fa-book-reader"></i> <em>Story</em></a></li> -->
+            <li><a href="{{url('/profile/')}}"><i class="fa fa-video"></i> <em>My Videos</em></a></li>
         </ul>
         
   </nav>
@@ -54,28 +54,22 @@
       <!-- Page Heading -->
       <div class="row d-flex">
       <?php foreach ($channel as $channel): ?>
-      
-          <div class="col-lg-4 col-md-6 justify-content-around">
-            <a href="#">
-              <div class="">
-                  <div class="media">
-                      <a class="thumbnail pull-left" href="{{ url('/search') }}">
-                          <img class="media-object" style="height:100px; width: 100px;margin:0 5px" src="<?= $channel['profilePic']?>">
-                      </a>
-                      <div>
-                          <h6 style="color: white; margin-left:5px">
-                            <?= $channel['nama'] ?>
-                          </h6>
-                      <p style="color: white; margin-left:5px"><?= $channel['videoCount']?> Video</p> 
-                      <p style="color: white; margin-left:5px"><?= $channel['subsCount']?> Subscribers</p>
-                          <p>
-                              <a class="btn btn-primary btn-sm ml-1" href="#">Subscribe</a>
-                          </p>
-                      </div>
-                  </div>
+      <a href="{{url('/profile')}}/<?= $channel['idChannelYoutube'] ?>">
+          <div class="col-lg-4 col-md-6 justify-content-around my-3">
+            <div class="media">
+              <img class="img-thumbnails" style="height:100px; width: 100px;margin:0 5px" src="<?= $channel['profilePic']?>">
+              <div class="media-body">
+                  <h6 style="color: white; margin-left:5px">
+                    <?= $channel['nama'] ?>
+                  </h6>
+              <p style="color: white; margin-left:5px"><?= $channel['videoCount']?> Video</p> 
+              <p style="color: white; margin-left:5px"><?= $channel['subsCount']?> Subscribers</p>
+              <!-- <a class="btn btn-primary btn-sm ml-1" href="#">Subscribe</a> -->
+             <!--  <div class="g-ytsubscribe" data-channelid="<?= $channel['idChannelYoutube']?>" data-layout="default" data-count="hidden" target="_blank"></div> -->
               </div>
-            </a>
+            </div>
           </div>
+        </a>  
           
         
         <hr> 
@@ -88,6 +82,8 @@
      
 
 </div></div>
+
+<script src="https://apis.google.com/js/platform.js"></script>
 </body>
 
 </html>
