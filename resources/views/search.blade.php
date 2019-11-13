@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/png" href="{{ asset('images/logo_youmaju_1.png')}}">
 
-  <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('/css/user.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/user.css')}}">
   <link rel="stylesheet" type="text/javascript" href="{{ asset('/js/myscript.js')}}">
   <link rel="stylesheet" href="{{ asset('/css/templatemo-main.css')}}">
 
@@ -30,15 +30,15 @@
           </div>
           <div class="mini-logo">
              
-          <a href="#"> <img src="{{asset('images/fav_icon_you_maju_YB.png')}}" style="max-width: 50px; margin-bottom:20px"></a>
+          <a href="#"> <img src="{{asset('images/fav_icon_you_maju_YB.png')}}" style="max-width: 50px; margin-bottom:20px;margin-left:-10px"></a>
           
           </div>
           <ul>
             <li><a href="#"><i class="fa fa-home"></i> <em>Home</em></a></li>
+            <li><a href="{{url('/profile')}}/<?= session('idChannelYoutube') ?>"><i class="fa fa-user"></i> <em>Profile</em></a></li>
             <li><a href="#"><i class="fa fa-search"></i> <em>Search</em></a></li>
-            <!-- <li><a href="#"><i class="fa fa-book-reader"></i> <em>Story</em></a></li> -->
-            <li><a href="{{url('/profile')}}/<?= session('idChannelYoutube') ?>"><i class="fa fa-video"></i> <em>My Videos</em></a></li>
-        </ul>
+            <li><a href="{{ url('/logout') }}"><i class="fa fa-upload"></i> <em>Log Out</em></a></li>
+          </ul>
         
   </nav>
   <!-- end navbar -->

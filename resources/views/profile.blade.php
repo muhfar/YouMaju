@@ -7,20 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
+    <link rel="stylesheet" href="{{asset('fonts/icomoon/style.css')}}">
+    
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
     <meta charset="utf-8">
   
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -48,21 +42,12 @@
 @endif
 
   <div class="site-wrap">
-
-    <!-- <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> -->
     
     <header class="site-navbar" role="banner">
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-  <div class="imagee"><h1><a href="index.html">
+  <div class="imagee"><h1><a href="http://youmaju.com">
      <img src="{{asset('images/youMaju_polos2.png')}}">
       </a></h1></div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -76,12 +61,6 @@
                 <span class="sr-only">(current)</span>
               </a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Notifikasi</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Pesan</a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/search') }}">Cari</a>
         </li>
@@ -94,7 +73,7 @@
   </div>
 </nav>
     </header>
-      <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/pr.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url({{asset('images/pr.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           
@@ -108,24 +87,24 @@
           <div class="subs">
             <h4 class="breadcrumb-custom">  
              <i class="fa fa-youtube" aria-hidden="true"></i> <?= $user['subsCount']?> Subscriber
-            </h4>
-            <!-- Check if show my profile -->
-            @if($segment2 != session('idChannelYoutube'))
+            </h4>      
+             <!-- Check if show my profile -->
+             @if($segment2 != session('idChannelYoutube'))
+             <!-- Text Subscribing -->
+              @if($subscribe['subscribing'])
+                <h6 class="text-following"><?= $user['nama'] ?> Telah Subscribe Anda</h6>
+              @else
+                <h6 class="text-following mt-1"><?= $user['nama'] ?> Belum Subscribe Anda</h6>
+              @endif
               <!-- Button Subscribe -->
               @if($subscribe['subscribe'])
                 <a type="button" class="btn btn-dark btn-subscribe" href="{{ url('profile/unsubscribe')}}/<?= $user['idChannelYoutube'] ?>">Disubscribe</a>
               @else
                 <a type="button" class="btn btn-warning btn-subscribe" href="{{ url('profile/subscribe')}}/<?= $user['idChannelYoutube'] ?>">Subscribe</a>
               @endif
-              <!-- Text Subscribing -->
-              @if($subscribe['subscribing'])
-                <h6 class="text-following"><?= $user['nama'] ?> telah Subscribe anda</h6>
-              @else
-                <h6 class="text-following mt-1"><?= $user['nama'] ?> belum Subscribe anda</h6>
-              @endif
             @endif
-            <!-- End Check my profile -->
-          </div>           
+             <!-- End Check my profile -->    
+           </div> 
           </div>
         </div>
       </div>
@@ -189,8 +168,8 @@
     <div class="creator_section_wrapper">
     <div class="row">   
     <div class="col-sm-12 mb-4">
-      <h2>Video</h2>
-      <div class="video-content">
+    <h2>Video</h2>
+      <div class="videoo">
       <?php foreach($embedVideo as $video):?>  
         <?= $video;?>
       <?php endforeach;?>
@@ -198,7 +177,7 @@
     
     </div>
 
-  </div>
+    </div>
     </div>     
     </div>
 
@@ -233,30 +212,39 @@
     
     
     <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
+          <div class="container">
             <div class="row">
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">YouMaju</h2>
-                <ul class="list-unstyled">
-                <li><a href="#">Tentang Kami</a></li>
-                  <li><a href="#">Bantuan</a></li>
-                  <li><a href="#">Kontak Kami</a></li>
-                </ul>
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h2 class="footer-heading mb-4">YouMaju</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Tentang Kami</a></li>
+                      <li><a href="#">Kontak Kami</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
+                     <a href="https://www.instagram.com/youmaju_/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                     <a href="https://twitter.com/YoumajuC" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                     <a href="https://www.linkedin.com/in/youmaju-com-ba6021196/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>  
+                    </div>
+                </div>
               </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-              </div>
+              <div class="row col-md-4 text-center">
+              <div class="col-md-12">
+                <div class="border-top">
+                <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; YouMaju <script>document.write(new Date().getFullYear());</script>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+                </div>
+            </div>
+              
             </div>
           </div>
-          
-      </div>
-    </footer>
+        </footer>
   </div>
 
   <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
