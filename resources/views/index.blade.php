@@ -26,6 +26,11 @@
     
   </head>
   <body class="bg-shape">
+@if(session('status-error'))
+  <div class="alert alert-danger">
+    {{ session('status-error') }}
+  </div>
+@endif
   
   <div class="site-wrap">
 

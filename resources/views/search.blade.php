@@ -37,7 +37,7 @@
             <li><a href="#"><i class="fa fa-home"></i> <em>Home</em></a></li>
             <li><a href="#"><i class="fa fa-search"></i> <em>Search</em></a></li>
             <!-- <li><a href="#"><i class="fa fa-book-reader"></i> <em>Story</em></a></li> -->
-            <li><a href="{{url('/profile/')}}"><i class="fa fa-video"></i> <em>My Videos</em></a></li>
+            <li><a href="{{url('/profile')}}/<?= session('idChannelYoutube') ?>"><i class="fa fa-video"></i> <em>My Videos</em></a></li>
         </ul>
         
   </nav>
@@ -52,7 +52,7 @@
             <form action="/search" method="POST">
               @csrf
               <!-- <input type="hidden" name="_token" value="<?php echo csrf_token() ?>"> -->
-              <input class="form-control" type="text" placeholder="Search" aria-label="Search" name="username">
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search" name="username" required>
               <!-- <input class="form-control-sm" type="submit" value="Cari"> -->
             </form>
           </div>               

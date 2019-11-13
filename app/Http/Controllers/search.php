@@ -11,7 +11,7 @@ class search extends Controller
     public function index()
     {
     	if(session()->has('idUser')){
-			$data['channel'] = channel::all();
+			$data['channel'] = channel::where('idChannelYoutube','!=', session('idChannelYoutube'))->orderBy('nama', 'ASC')->get();
     		// var_dump($data);
 			return view('search', $data);
 		}else{
@@ -20,13 +20,17 @@ class search extends Controller
     }
 
     public function cariUser(Request $request){
+    	$username = $request->validate([
+    		'username' => 'required'
+    	]);
+
     	$username = $request->input('username');
 
     	if(session()->has('idUser')){
     		$data['channel'] = channel::where('nama','like', '%'.$username.'%')
-    							->orWhere('idChannelYoutube', 'like', '%'.$username.'%')
+    							->where('idChannelYoutube','!=', session('idChannelYoutube'))
+    							->orWhere('idChannelYoutub', 'like', '%'.$username.'%')
     							->orderBy('nama', 'ASC')
-    							->take(9)
     							->get();
     		// var_dump($data);
     		

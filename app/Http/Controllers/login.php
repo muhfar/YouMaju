@@ -29,7 +29,7 @@ class login extends Controller
     			'https://www.googleapis.com/auth/youtube.force-ssl'
     		);
     		$parameter = array(
-    			'prompt' => 'consent select_account' ,
+    			'prompt' => 'select_account' ,
     			'access_type' => 'offline'
     		);
     		return Socialite::driver('google')
@@ -50,7 +50,7 @@ class login extends Controller
         //transfrom data to array
         $user = json_decode(json_encode($user), true);
 
-        if(!isset($user)){
+        if(http_response_code() != 200){
         	return redirect('/redirect');
         }else{
         	//Check DB if the user already exits
@@ -83,30 +83,36 @@ class login extends Controller
 		        $url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$data['session']['token'].'&part=snippet,contentDetails,statistics&mine=true&key='. env('GOOGLE_API_KEY');
 
 		    	$result = $ch->connect($url_userData);
+				
+				// var_dump($result);
+		    	
+		    	if($result['httpResponseCode'] == 200){
+						$data['user'] =  array(
+		                'etag' => $result['items'][0]['etag'],
+		                'idChannelYoutube' => $result['items'][0]['id'],
+		                'nama' => $result['items'][0]['snippet']['title'],
+		                'profilePic' => $result['items'][0]['snippet']['thumbnails']['medium']['url'],
+		                'playlistVideo' => $result['items'][0]['contentDetails']['relatedPlaylists']['uploads'],
+		                'videoCount' => $result['items'][0]['statistics']['videoCount'],
+		                'subsCount' => $result['items'][0]['statistics']['subscriberCount']
+		            );
 
-		    	// var_dump($result);
-	            $data['user'] =  array(
-	                'etag' => $result['items'][0]['etag'],
-	                'idChannelYoutube' => $result['items'][0]['id'],
-	                'nama' => $result['items'][0]['snippet']['title'],
-	                'profilePic' => $result['items'][0]['snippet']['thumbnails']['medium']['url'],
-	                'playlistVideo' => $result['items'][0]['contentDetails']['relatedPlaylists']['uploads'],
-	                'videoCount' => $result['items'][0]['statistics']['videoCount'],
-	                'subsCount' => $result['items'][0]['statistics']['subscriberCount']
-	            );
+					// Update or insert data channel from user
+		            DB::table('channel')->updateOrInsert(['idChannelYoutube' => $result['items'][0]['id']] , $data['user']);
 
-	            // Update or insert data channel from user
-	            DB::table('channel')->updateOrInsert(['idChannelYoutube' => $result['items'][0]['id']] , $data['user']);
+		            //get idChannel to save idChannel to table Data User
+		            $idChannel = DB::table('channel')->where('idChannelYoutube', $result['items'][0]['id'])->value('idChannel');
 
-	            //get idChannel to save idChannel to table Data User
-	            $idChannel = DB::table('channel')->where('idChannelYoutube', $result['items'][0]['id'])->value('idChannel');
+		            //Insert idChannel to table Data User
+		            DB::table('user_account')->where('idUser', $data['session']['idUser'])->update(['idChannel' => $idChannel]);
 
-	            //Insert idChannel to table Data User
-	            DB::table('user_account')->where('idUser', $data['session']['idUser'])->update(['idChannel' => $idChannel]);
-
-	            //Put idChannelYoutube User to Session
-	            $data['session']['idChannelYoutube'] = $result['items'][0]['id'];
-	            session($data['session']);
+		            //Put idChannelYoutube User to Session
+		            $data['session']['idChannelYoutube'] = $result['items'][0]['id'];
+		            session($data['session']);
+		    	}else{
+		    		$error['message'] = $result['error']['message'];
+		    		return redirect('/')->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
+		    	}
 
 		    // var_dump($data['session']);
 	        return redirect('/search');

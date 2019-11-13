@@ -20,53 +20,78 @@ class profile extends Controller
             // if($idChannel == 'my'){
             
             // }else{
-            //     $url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$session['token'].'&part=snippet,contentDetails,statistics&id='. $idChannel;
+            
             // }
             $url_userData = 'https://www.googleapis.com/youtube/v3/channels?access_token='.$session['token'].'&part=snippet,contentDetails,statistics&id='. $idChannel .'&key='. env('GOOGLE_API_KEY');
 
             $result = $ch->connect($url_userData);
 
             // var_dump($result);
-            
-            $data['user'] =  array(
-                'etag' => $result['items'][0]['etag'],
-                'idChannelYoutube' => $result['items'][0]['id'],
-                'nama' => $result['items'][0]['snippet']['title'],
-                'profilePic' => $result['items'][0]['snippet']['thumbnails']['medium']['url'],
-                'playlistVideo' => $result['items'][0]['contentDetails']['relatedPlaylists']['uploads'],
-                'videoCount' => $result['items'][0]['statistics']['videoCount'],
-                'subsCount' => $result['items'][0]['statistics']['subscriberCount']
-            );
+            //Check Response API
+            if($result['httpResponseCode'] == '200'){
+                $data['user'] =  array(
+                    'etag' => $result['items'][0]['etag'],
+                    'idChannelYoutube' => $result['items'][0]['id'],
+                    'nama' => $result['items'][0]['snippet']['title'],
+                    'profilePic' => $result['items'][0]['snippet']['thumbnails']['medium']['url'],
+                    'playlistVideo' => $result['items'][0]['contentDetails']['relatedPlaylists']['uploads'],
+                    'videoCount' => $result['items'][0]['statistics']['videoCount'],
+                    'subsCount' => $result['items'][0]['statistics']['subscriberCount']
+                );
 
-            // get id Video from account User
-            $url_idVideo = 'https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=10&playlistId='. $data['user']['playlistVideo'] .'&access_token='.$session['token'];
-            $result_idVideo = $ch->connect($url_idVideo);
+                // get id Video from account User
+                $url_idVideo = 'https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=10&playlistId='. $data['user']['playlistVideo'] .'&access_token='.$session['token'].'&key='. env('GOOGLE_API_KEY');
+                $result_idVideo = $ch->connect($url_idVideo);
 
-            foreach ($result_idVideo['items'] as $key) {
-                $idVideo[] = $key['contentDetails']['videoId'];
+                //Cek Jumlah Video User
+                $totalVideo = $result_idVideo['pageInfo']['totalResults'];
+
+                //Handle Jumlah Video Null
+                if($totalVideo != '0'){
+                    foreach ($result_idVideo['items'] as $key) {
+                        $idVideo[] = $key['contentDetails']['videoId'];
+                    }
+
+                    //get Video from Id video
+                    $url_getVideo = 'https://www.googleapis.com/youtube/v3/videos?access_token='.$session['token'].'&key='. env('GOOGLE_API_KEY').'&part=player&id=';
+
+                    foreach ($idVideo as $key) {
+                        $url_getVideo .= $key.',';
+                    }
+
+                    $result_getVideo = $ch->connect($url_getVideo);
+
+                    foreach ($result_getVideo['items'] as $key) {
+                        $data['embedVideo'][] = $key['player']['embedHtml'];
+                    }
+
+                }else{
+                    $data['embedVideo'][] = '<h4>No Video Uploaded</h4>';
+                }
+                // var_dump($result_idVideo);
+                
+                if($idChannel != session('idChannelYoutube')){
+                    $data['subscribe'] = $this->cekSubscribe($idChannel);
+                }
+
+                // var_dump($result);
+                // var_dump($session);
+                return view('profile', $data);
+                
+            }elseif ($result['httpResponseCode'] == '401') {
+                //Check if Response Unauthorized
+                $error['message'] = $result['error']['message'];
+                $this->logout();
+                return redirect('/')->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
+            }else{
+                //Any other error
+                $error['message'] = $result['error']['message'];
+                $this->logout();
+                return redirect('/')->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
             }
 
-            //get Video from Id video
-            $url_getVideo = 'https://www.googleapis.com/youtube/v3/videos?access_token='.$session['token'].'&key='. env('GOOGLE_API_KEY').'&part=player&id=';
-
-            foreach ($idVideo as $key) {
-                $url_getVideo .= $key.',';
-            }
-
-            $result_getVideo = $ch->connect($url_getVideo);
-
-            foreach ($result_getVideo['items'] as $key) {
-                $data['embedVideo'][] = $key['player']['embedHtml'];
-            }
-
-            $data['subscribe'] = $this->cekSubscribe($idChannel);
-
-            // var_dump($result);
-            // var_dump($session);
-            return view('profile', $data);
-
-    		
     	}else{
+            //Session Timeout or Not Set
     		return redirect('/redirect');
     	}
     	

@@ -14,10 +14,12 @@ class curl extends Controller
     	curl_setopt($curl, CURLOPT_AUTOREFERER, true); 
 
     	$result = curl_exec($curl);
+        $result = json_decode($result, true);
+        $result['httpResponseCode'] = curl_getinfo($curl, CURLINFO_RESPONSE_CODE);
 
     	curl_close($curl);
 
-    	$result = json_decode($result, true);
+    	
 
     	return $result;
     }

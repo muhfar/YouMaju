@@ -34,6 +34,9 @@
     
   </head>
   <body>
+  <?php
+    $segment2 = Request::segment(2);
+  ?>
 @if (session('status-success'))
     <div class="alert alert-success">
         {{ session('status-success') }}
@@ -98,7 +101,7 @@
           <div class="profile" data-aos="fade-up" data-aos-delay="400">
           <img src="<?= $user['profilePic']?>">
           <div>
-            <h2 class="text-white font-weight-light font-weight-bold"><?= $user['nama'] ?>
+            <h2 class="text-white font-weight-light font-weight-bold"><?= $user['nama']?>
               <a href="#"> <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#modalLoginAvatar"></i></a>
             </h2>
           </div>
@@ -106,18 +109,22 @@
             <h4 class="breadcrumb-custom">  
              <i class="fa fa-youtube" aria-hidden="true"></i> <?= $user['subsCount']?> Subscriber
             </h4>
-            <!-- Button Subscribe -->
-            @if($subscribe['subscribe'])
-              <a type="button" class="btn btn-dark btn-subscribe" href="{{ url('profile/unsubscribe')}}/<?= $user['idChannelYoutube'] ?>">Disubscribe</a>
-            @else
-              <a type="button" class="btn btn-warning btn-subscribe" href="{{ url('profile/subscribe')}}/<?= $user['idChannelYoutube'] ?>">Subscribe</a>
+            <!-- Check if show my profile -->
+            @if($segment2 != session('idChannelYoutube'))
+              <!-- Button Subscribe -->
+              @if($subscribe['subscribe'])
+                <a type="button" class="btn btn-dark btn-subscribe" href="{{ url('profile/unsubscribe')}}/<?= $user['idChannelYoutube'] ?>">Disubscribe</a>
+              @else
+                <a type="button" class="btn btn-warning btn-subscribe" href="{{ url('profile/subscribe')}}/<?= $user['idChannelYoutube'] ?>">Subscribe</a>
+              @endif
+              <!-- Text Subscribing -->
+              @if($subscribe['subscribing'])
+                <h6 class="text-following"><?= $user['nama'] ?> telah Subscribe anda</h6>
+              @else
+                <h6 class="text-following mt-1"><?= $user['nama'] ?> belum Subscribe anda</h6>
+              @endif
             @endif
-            <!-- Text Subscribing -->
-            @if($subscribe['subscribing'])
-              <h6 class="text-following"><?= $user['nama'] ?> telah Subscribe anda</h6>
-            @else
-              <h6 class="text-following mt-1"><?= $user['nama'] ?> belum Subscribe anda</h6>
-            @endif
+            <!-- End Check my profile -->
           </div>           
           </div>
         </div>
