@@ -37,7 +37,7 @@
             <li><a href="#"><i class="fa fa-home"></i> <em>Home</em></a></li>
             <li><a href="{{url('/profile')}}/<?= session('idChannelYoutube') ?>"><i class="fa fa-user"></i> <em>Profile</em></a></li>
             <li><a href="#"><i class="fa fa-search"></i> <em>Search</em></a></li>
-            <li><a href="{{ url('/logout') }}"><i class="fa fa-upload"></i> <em>Log Out</em></a></li>
+            <li><a href="{{ url('/logout') }}"><i class="fa fa-sign-out-alt"></i> <em>Log Out</em></a></li>
           </ul>
         
   </nav>

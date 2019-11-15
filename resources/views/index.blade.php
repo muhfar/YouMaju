@@ -17,14 +17,10 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap-datepicker.css')}}">
 
     <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
-
-
-
     <link rel="stylesheet" href="{{asset('css/aos.css')}}">
+   <link rel="stylesheet" href="{{asset('css/style.css')}}">
+   </head>
 
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    
-  </head>
   <body class="bg-shape">
 @if(session('status-error'))
   <div class="alert alert-danger">
@@ -33,13 +29,10 @@
 @endif
   
   <div class="site-wrap">
-
     <header class="site-navbar py-3" role="banner">
-
       <div class="container gambaricon">
         <div class="align-items-center" data-aos="fade-up" data-aos-delay="400" >
-         <a href="#"> <img src="{{asset('images/fav_icon_you_maju_YB.png')}}">
-                  
+         <a href="#"> <img src="{{asset('images/fav_icon_you_maju_YB.png')}}">     
     </header>
 
     <div class="site-blocks-cover hero-banner overlay" style="background-image: url( {{url('images/teaser_ep_4.gif')}});"  data-stellar-background-ratio="0.5">
@@ -47,50 +40,19 @@
       <div class="row text-md-center">
         <div class="col-md-6 col-lg-12 mb-5 mb-md-0">
         <img class="img-fluid" src="{{asset('images/youMaju_polos2.png')}}" alt="">
-      
-        <h2 style="text-align:center">CREATE &#8227; CONNECT &#8227; MAKE AN IMPACT</h2>
-          <!-- <p align="justify">YouMaju membantu majuers belajar membuat content yang positive, menarik, dan 
-          impactfull. Kemudian dengan YouMaju kamu dapat dengan mudah membangun koneksi antar content creator, dan saling support temanmu 
-          dengan cara memberikan feedback terbaik majuers. Selalu Bagikan ceritamu pada yang lain untuk menyebar dampak positif.</p> -->
-      
-            <a href="{{ url('/redirect') }}" class=" btn-outline btn-xl ">Gabung Sekarang!</a>
+        <h2 style="text-align:center">CREATE &#8227; CONNECT &#8227; MAKE AN IMPACT</h2>   
+        <a href="{{ url('/redirect') }}" class=" btn btn-primary btn-xl ">Gabung Sekarang!</a>
         </div>
-        <!-- <div class="col-md-6 col-lg-7 col-xl-6 offset-xl-1">
-          <img class="img-fluid" src="{{asset('images/youMaju_polos2.png')}}" alt="">
-        </div> -->
       </div>
       </div></div>
     </div>  
-
-    
-    <!-- <div class="site-blocks-cover hero-banner overlay" style="background-image: url(images/teaser_ep_4.gif);" data-aos="fade" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
-          <div class="col-md-8">
-          <a href="index.html"> 
-          <img src="{{asset('images/youMaju_polos2.png')}}" >
-            </a>
-            <div class="banner">
-            <h2 class="text-uppercase font-weight-bold" style="color : #f7f721; font-family: Verdana;">
-            Create
-            <img src="{{asset('images/logo_youmaju_2.png')}}"> Connect
-            <img src="{{asset('images/logo_youmaju_2.png')}}"> Make an Impact
-          </h2>
-            <h6 class=" font-weight-bold"style="color : #f7f721">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h6>
-             <a href="{{ url('/redirect') }}" class="btn btn-primary font-weight-bold">Gabung Sekarang !!!</a>
-        </div>
-          </div>
-        </div>
-      </div>
-    </div>   -->
-
         <div class="site-section">
           <div class="container">
             
             <div class="row justify-content-center mb-5">
               <div class="col-md-7 text-center border-primary tulisan jodol">
-                <h1 class="mb-0" style="color:#3c3c32">YouMaju</h1>
-                <p class="" style="color:#343a40">Apa Aja Sih yang Ada di YouMaju?</p>
+                <h1 class="mb-0">YouMaju</h1>
+                <p class="">Apa Aja Sih yang Ada di YouMaju?</p>
               </div>
             </div>
             <div class="row align-items-stretch">
@@ -147,67 +109,6 @@
         </div>
       </section>
         
-        <!-- <div class="site-section border-bottom">
-          <div class="container">
-
-            <div class="row justify-content-center mb-5">
-              <div class="col-md-7 text-center border-primary">
-                <h2 class="font-weight-light text-primary">Testimonials</h2>
-              </div>
-            </div>
-
-            <div class="slide-one-item home-slider owl-carousel">
-              <div>
-                <div class="testimonial">
-                  <figure class="mb-4">
-                    <img src="{{asset('images/person_3.jpg')}}" alt="Image" class="img-fluid mb-3">
-                    <p>John Smith</p>
-                  </figure>
-                  <blockquote>
-                    <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                  </blockquote>
-                </div>
-              </div>
-              <div>
-                <div class="testimonial">
-                  <figure class="mb-4">
-                    <img src="{{asset('images/person_2.jpg')}}" alt="Image" class="img-fluid mb-3">
-                    <p>Christine Aguilar</p>
-                  </figure>
-                  <blockquote>
-                    <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                  </blockquote>
-                </div>
-              </div>
-
-              <div>
-                <div class="testimonial">
-                  <figure class="mb-4">
-                    <img src="{{asset('images/person_4.jpg')}}" alt="Image" class="img-fluid mb-3">
-                    <p>Robert Spears</p>
-                  </figure>
-                  <blockquote>
-                    <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                  </blockquote>
-                </div>
-              </div>
-
-              <div>
-                <div class="testimonial">
-                  <figure class="mb-4">
-                    <img src="{{asset('images/person_5.jpg')}}" alt="Image" class="img-fluid mb-3">
-                    <p>Bruce Rogers</p>
-                  </figure>
-                  <blockquote>
-                    <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                  </blockquote>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div> -->
-
         <div class="site-section">
           <div class="container">
             <div class="row justify-content-center mb-5">
@@ -263,18 +164,6 @@
         </div>
      </div>
     </div>
-        
-        <div class="site-section border-top">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-md-12 jodol">
-                <h4 class="mb-5 text-black">Belajar dan Cari Koneksi Kemudian Temukan Peluang Berbagi Ceritamu!</h4>
-                <a href="{{ url('/redirect') }}" class="btn btn-primary btn-outline btn-xl ">Gabung Sekarang!</a>
-
-              </div>
-            </div>
-          </div>
-        </div>
 
     </div>
         <footer class="site-footer">
