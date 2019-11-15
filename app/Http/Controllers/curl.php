@@ -19,8 +19,6 @@ class curl extends Controller
 
     	curl_close($curl);
 
-    	
-
     	return $result;
     }
 }

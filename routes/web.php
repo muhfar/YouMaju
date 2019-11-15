@@ -58,9 +58,6 @@ Route::get('/content_detail', function () {
 Route::get('/search', 'search@index');
 Route::post('/search', 'search@cariUser');
 
-
-
-
 Route::get('/home', 'home@index');
 
 Route::get('/home/content-detail', 'home@content_detail');

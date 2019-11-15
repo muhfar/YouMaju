@@ -38,6 +38,7 @@ class profile extends Controller
                     'videoCount' => $result['items'][0]['statistics']['videoCount'],
                     'subsCount' => $result['items'][0]['statistics']['subscriberCount']
                 );
+                // var_dump($result);
 
                 // get id Video from account User
                 $url_idVideo = 'https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=10&playlistId='. $data['user']['playlistVideo'] .'&access_token='.$session['token'].'&key='. env('GOOGLE_API_KEY');
@@ -145,10 +146,11 @@ class profile extends Controller
             $channelId = $result['snippet']['resourceId']['channelId'];
             $kind = $result['kind'];
             // var_dump($channelId);
-            if(!empty($channelId)){
+            if($result['httpResponseCode'] == '200'){
                 return back()->with('status-success', 'Subscribe Berhasil!');
             }else{
-                return back()->with('status-error', 'Subscribe Gagal!');
+                $error['message'] = $result['error']['message'];
+                return back()->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
             }
             
         }else{
@@ -191,7 +193,8 @@ class profile extends Controller
             if($result['httpResponseCode'] == '204'){
                 return back()->with('status-success', 'Anda telah berhenti berlangganan!' );
             }else{
-                return back()->with('status-error', 'Unsubscribe Gagal!');
+                $error['message'] = $result['error']['message'];
+                return back()->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
             }
         }else{
             return redirect('/redirect');
@@ -209,25 +212,31 @@ class profile extends Controller
             $url = 'https://www.googleapis.com/youtube/v3/subscriptions?part=id&channelId='. $idChannel .'&forChannelId='. $session['idChannelYoutube'] .'&access_token='. $session['token'].'&key='. env('GOOGLE_API_KEY');
             $result = $ch->connect($url);
 
-            $totalResults = $result['pageInfo']['totalResults'];
+            if($result['httpResponseCode'] == '200'){
+                $totalResults = $result['pageInfo']['totalResults'];
 
-            if($totalResults == '0'){
-                $data['subscribing'] = 0;
+                if($totalResults == '0'){
+                    $data['subscribing'] = '0';
+                }else{
+                    $data['subscribing'] = '1';
+                }
+
             }else{
-                $data['subscribing'] = 1;
+                $data['subscribing'] = '403';
             }
 
             //Cek Subscribe User yang login
-            $url = 'https://www.googleapis.com/youtube/v3/subscriptions?part=id&mine=true&forChannelId='. $idChannel .'&access_token='. $session['token'].'&key='. env('GOOGLE_API_KEY');
-            $result = $ch->connect($url);
+                $url = 'https://www.googleapis.com/youtube/v3/subscriptions?part=id&mine=true&forChannelId='. $idChannel .'&access_token='. $session['token'].'&key='. env('GOOGLE_API_KEY');
+                $result = $ch->connect($url);
 
-            $totalResults = $result['pageInfo']['totalResults'];
+                $totalResults = $result['pageInfo']['totalResults'];
 
-            if($totalResults == '0'){
-                $data['subscribe'] = 0;
-            }else{
-                $data['subscribe'] = 1;
-            }
+                if($totalResults == '0'){
+                    $data['subscribe'] = 0;
+                }else{
+                    $data['subscribe'] = 1;
+                }
+            
 
             return $data;
             // var_dump($result);

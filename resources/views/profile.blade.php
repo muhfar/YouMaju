@@ -91,8 +91,10 @@
              <!-- Check if show my profile -->
              @if($segment2 != session('idChannelYoutube'))
              <!-- Text Subscribing -->
-              @if($subscribe['subscribing'])
+              @if($subscribe['subscribing'] == '1')
                 <h6 class="text-following"><?= $user['nama'] ?> Telah Subscribe Anda</h6>
+              @elseif($subscribe['subscribing'] == '403')
+                <h6 class="text-following">Subscription <?= $user['nama'] ?> bersifat rahasia</h6>
               @else
                 <h6 class="text-following mt-1"><?= $user['nama'] ?> Belum Subscribe Anda</h6>
               @endif
