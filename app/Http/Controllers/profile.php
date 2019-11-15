@@ -139,6 +139,7 @@ class profile extends Controller
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 
             $result = json_decode(curl_exec($ch), true);
+            $result['httpResponseCode'] = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
             curl_close($ch);
 
             // var_dump($result);

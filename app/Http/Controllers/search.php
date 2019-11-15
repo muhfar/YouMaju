@@ -29,7 +29,7 @@ class search extends Controller
     	if(session()->has('idUser')){
     		$data['channel'] = channel::where('nama','like', '%'.$username.'%')
     							->where('idChannelYoutube','!=', session('idChannelYoutube'))
-    							->orWhere('idChannelYoutub', 'like', '%'.$username.'%')
+    							->orWhere('idChannelYoutube', 'like', '%'.$username.'%')
     							->orderBy('nama', 'ASC')
     							->get();
     		// var_dump($data);
