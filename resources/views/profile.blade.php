@@ -16,15 +16,8 @@
     <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
     <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
     <meta charset="utf-8">
-  
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> --> 
-
-
+    <link rel="stylesheet" href="{{ asset('css/templatemo-main.css')}}">
     <link rel="stylesheet" href="{{asset('css/aos.css')}}">
-
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     
   </head>
   <body>
@@ -41,41 +34,32 @@
     </div>
 @endif
 
-  <div class="site-wrap">
-    
-    <header class="site-navbar" role="banner">
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-  <div class="imagee"><h1><a href="http://youmaju.com">
-     <img src="{{asset('images/youMaju_polos2.png')}}">
-      </a></h1></div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" 
-    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Beranda
-                <span class="sr-only">(current)</span>
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url('/search') }}">Cari</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=" {{ url('/logout') }}">Keluar</a>
-        </li>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    </header>
-      <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url({{asset('images/pr.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
+<!-- navbar -->
+  <nav>
+          <div class="logo">
+             
+          <a href="#"> <img src="{{asset('images/youMaju_polos2.png')}}"></a>
+          
+          </div>
+          <div class="mini-logo">
+             
+          <a href="#"> <img src="{{asset('images/fav_icon_you_maju_YB.png')}}" style="max-width: 50px; margin-bottom:20px;margin-left:-10px"></a>
+          
+          </div>
+          <ul>
+            <li><a href="#"><i class="fa fa-home"></i> <em>Home</em></a></li>
+            <li><a href="{{url('/profile')}}/<?= session('idChannelYoutube') ?>"><i class="fa fa-user"></i> <em>Profile</em></a></li>
+            <li><a href="{{url('/search')}}"><i class="fa fa-search"></i> <em>Search</em></a></li>
+            <li><a href="{{ url('/logout') }}"><i class="fa fa-sign-out-alt"></i> <em>Log Out</em></a></li>
+          </ul>
+        
+  </nav>
+  <!-- end navbar -->
+  <div class="profile-user">
+            <div class="content first-content">   
+                        <!-- Search form -->
+          <div class="md-form mt-0"style="margin-bottom: 20px; width:90%">
+          <div class="row align-items-center justify-content-center text-center">
           
           <div class="profile" data-aos="fade-up" data-aos-delay="400">
           <img src="<?= $user['profilePic']?>">
@@ -87,9 +71,9 @@
           <div class="subs">
             <h4 class="breadcrumb-custom">  
              <i class="fa fa-youtube" aria-hidden="true"></i> <?= $user['subsCount']?> Subscriber
-            </h4>      
-             <!-- Check if show my profile -->
-             @if($segment2 != session('idChannelYoutube'))
+            </h4> 
+            <!-- Check if show my profile -->
+            @if($segment2 != session('idChannelYoutube'))
              <!-- Text Subscribing -->
               @if($subscribe['subscribing'] == '1')
                 <h6 class="text-following"><?= $user['nama'] ?> Telah Subscribe Anda</h6>
@@ -106,13 +90,11 @@
               @endif
             @endif
              <!-- End Check my profile -->    
-           </div> 
-          </div>
-        </div>
-      </div>
-    </div> 
-
-    <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+           </div>  
+          </div>   
+          </div> 
+          </div> 
+          <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
     <!--Content-->
@@ -160,12 +142,11 @@
           <button class="btn btn-primary py-3 px-5" style="margin-bottom: 20px; margin-top:-20px;">Simpan</button>
         </div>
       </div>
-
-    </div>
+      </div>
   </div>
-</div>    
-  
-    <div class=" modal-body ">
+</div> 
+          <!-- Page Heading -->
+      <div class=" modal-body ">
     
     <div class="creator_section_wrapper">
     <div class="row">   
@@ -182,40 +163,8 @@
     </div>
     </div>     
     </div>    
-    <footer class="site-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-9">
-                <div class="row">
-                  <div class="col-md-3">
-                    <h2 class="footer-heading mb-4">YouMaju</h2>
-                    <ul class="list-unstyled">
-                      <li><a href="#">Tentang Kami</a></li>
-                      <li><a href="#">Kontak Kami</a></li>
-                      </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <h2 class="footer-heading mb-4">Majuers ikuti media sosial kami!</h2>
-                     <a href="https://www.instagram.com/youmaju_/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                     <a href="https://twitter.com/YoumajuC" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                     <a href="https://www.linkedin.com/in/youmaju-com-ba6021196/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>  
-                    </div>
-                </div>
-              </div>
-              <div class="row col-md-4 text-center">
-              <div class="col-md-12">
-                <div class="border-top">
-                <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy; YouMaju <script>document.write(new Date().getFullYear());</script>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-                </div>
-            </div>
-              
-            </div>
-          </div>
-        </footer>
+      </div>
+
   </div>
 
   <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>

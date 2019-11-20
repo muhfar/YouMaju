@@ -1,4 +1,10 @@
 
+
+.profile-user{
+  width:80%; 
+  float: right;
+  margin-top: -55px;
+}
 .tulisan p{
   color:#fff;
   font-weight: 350;
@@ -354,7 +360,6 @@
     padding: 24px;
     margin: 0 auto;
     margin-top: -120px;
-    background-color: #131212;
   }
   .col-11 img{
     height :70px;}
@@ -2184,18 +2189,6 @@
   }
   .fa {
     color: #ffff00;
-  }
-  .creator_section_wrapper{
-    box-sizing:border-box;
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    width:100%;
-    max-width: 1500px;
-    padding: 24px;
-    margin: 0 auto;
-    margin-top: -120px;
-    background-color: #fff;
   }
   .col-11 img{
     height :70px;}
