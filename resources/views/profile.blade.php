@@ -83,11 +83,13 @@
                 <h6 class="text-following mt-1"><?= $user['nama'] ?> Belum Subscribe Anda</h6>
               @endif
               <!-- Button Subscribe -->
+              <a class="g-ytsubscribe" data-channelid="<?= $user['idChannelYoutube'] ?>" data-layout="default" data-count="hidden" target"_blank"></a>
+            <!--
               @if($subscribe['subscribe'])
                 <a type="button" class="btn btn-dark btn-subscribe" href="{{ url('profile/unsubscribe')}}/<?= $user['idChannelYoutube'] ?>">Disubscribe</a>
               @else
                 <a type="button" class="btn btn-warning btn-subscribe" href="{{ url('profile/subscribe')}}/<?= $user['idChannelYoutube'] ?>">Subscribe</a>
-              @endif
+              @endif-->
             @endif
              <!-- End Check my profile -->    
            </div>  
