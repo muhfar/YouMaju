@@ -3,22 +3,21 @@
 <html lang="en">
   <head>
     <title>YouMaju &mdash; Profile</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="{{ asset('images/logo_youmaju_1.png')}}">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
-    <link rel="stylesheet" href="{{asset('fonts/icomoon/style.css')}}">
-    
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/user.css')}}">
+  <link rel="stylesheet" type="text/javascript" href="{{ asset('/js/myscript.js')}}">
+  <link rel="stylesheet" href="{{ asset('/css/templatemo-main.css')}}">
 
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
-    <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ asset('css/templatemo-main.css')}}">
-    <link rel="stylesheet" href="{{asset('css/aos.css')}}">
-    
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
   </head>
   <body>
   <?php
@@ -65,12 +64,11 @@
           <img src="<?= $user['profilePic']?>">
           <div>
             <h2 class="text-white font-weight-light font-weight-bold"><?= $user['nama']?>
-              <!-- <a href="#"> <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#modalLoginAvatar"></i></a> -->
             </h2>
           </div>
           <div class="subs">
             <h4 class="breadcrumb-custom">  
-             <i class="fa fa-youtube" aria-hidden="true"></i> <?= $user['subsCount']?> Subscriber
+             <i class="fab fa-youtube" aria-hidden="true"></i> <?= $user['subsCount']?> Subscriber
             </h4> 
             <!-- Check if show my profile -->
             @if($segment2 != session('idChannelYoutube'))

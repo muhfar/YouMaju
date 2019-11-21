@@ -59,7 +59,7 @@
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="unit-4 d-flex">
                   <div class="unit-4-icon mr-4"><span class="text-primary">
-                  <img src="{{asset('images/connection.png')}}"style="height :100px">
+                  <img src="{{asset('images/video.png')}}"style="height :100px">
                   </span></div>
                   <div class="tulisan">
                     <h3>YouCreate</h3>
@@ -71,7 +71,7 @@
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="unit-4 d-flex">
                   <div class="unit-4-icon mr-4"><span class="text-primary">
-                  <img src="{{asset('images/studying.png')}}"style="height :100px">
+                  <img src="{{asset('images/connection.png')}}"style="height :100px">
                   </span></div>
                   <div class="tulisan">
                     <h3>YouConnect</h3>
@@ -83,7 +83,7 @@
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="unit-4 d-flex">
                   <div class="unit-4-icon mr-4"><span class="text-primary">
-                  <img src="{{asset('images/networking.png')}}"style="height :100px">
+                  <img src="{{asset('images/influencer.png')}}"style="height :100px">
                   </span></div>
                   <div class="tulisan">
                     <h3>YouMakeImpact</h3>

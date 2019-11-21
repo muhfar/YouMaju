@@ -15,6 +15,13 @@ http://www.templatemo.com/tm-512-moonlight
     opacity: 0;
   }
 }
+.breadcrumb-custom{
+	color: #ff0;
+	font-size: 15px;
+}
+.creator_section_wrapper h2{
+	color: #fff;
+}
 .profile-user{
 	width:80%; 
 	float: right;
@@ -360,7 +367,7 @@ nav a:hover {
 }
 
 .first-content h2 {
-	font-size: 36px;
+	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
@@ -369,7 +376,7 @@ nav a:hover {
 	display: inline-block;
 	padding-bottom: 10px;
 	margin-bottom: 20px;
-	margin-top: 0px;
+	margin-top: 20px;
 }
 
 .first-content p {
@@ -863,5 +870,41 @@ nav a:hover {
 	}
 	nav a {
 	  	padding: 15px 20px;
+	}
+	.first-content h2{
+		font-size: 20px;
+		margin-left: 30px;
+	}
+	.creator_section_wrapper h2{
+		margin-top: 50px;
+		font-size: 15px;
+		
+	}
+	.profile img{
+		margin-left: 20%;
+		
+		
+	}.breadcrumb-custom{
+		margin-left: 25px;
+	}
+
+}
+
+@media (max-width: 320px){
+	.first-content h2{
+		font-size: 20px;
+		margin-left: 55px;
+	}
+	.creator_section_wrapper h2{
+		margin-top: 50px;
+		font-size: 15px;
+		
+	}
+	.profile img{
+		margin-left: 30%;
+		
+		
+	}.breadcrumb-custom{
+		margin-left: 45px;
 	}
 }

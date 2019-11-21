@@ -435,7 +435,7 @@
     max-width :100%; margin-bottom: -10px;
   }
   .h-entry{
-    color:#ff0;
+    color:#ffff;
     margin-top: 30px; 
     margin-right: 40px; 
     font-size: 20px;
@@ -2250,11 +2250,6 @@
   
   /* landig page */
   
-  .h-entry{
-    margin-top: 30px; 
-    margin-right: 40px; 
-    font-size: 20px;
-  }
   .banner img{
     max-height: 25px;
     max-width: 25px;
@@ -2339,7 +2334,7 @@
     .h-entry p{
       margin-top: -30px;
       font-size: 15px;
-      color: #ff0;
+      color: #ffff;
       text-align :justify;
      
     }
