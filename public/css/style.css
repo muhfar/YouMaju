@@ -37,6 +37,7 @@
   .videoo{
     display: block;
     text-align: center;
+    margin-left: -30px;
   }
   .videoo iframe{
     width: 230px;
@@ -347,9 +348,7 @@
     width: 5%;
    
   }
-  .fa {
-    color: #ffff00;
-  }
+ 
   .creator_section_wrapper{
     box-sizing:border-box;
     display:flex;
@@ -357,7 +356,6 @@
     flex-wrap: wrap;
     width:100%;
     max-width: 1500px;
-    padding: 24px;
     margin: 0 auto;
     margin-top: -120px;
   }
@@ -1956,11 +1954,6 @@
       max-width: 100px;
       margin: 0 auto;
       border-radius: 50%; }
-  
-  .breadcrumb-custom {
-    font-size: 15px !important; 
-    color: aliceblue;}
-  
   .text-muted {
     color: #ccc !important;
     font-size: 12px;
@@ -2187,19 +2180,12 @@
     width: 5%;
    
   }
-  .fa {
-    color: #ffff00;
-  }
   .col-11 img{
     height :70px;}
   .gambar img{
       margin-top: 40px;
     height :40px; float: right;}
-  .profile img{
-    height :150px; 
-    border-radius: 50%;
-    margin-top: 60px;
-  }
+
   .profile h2{
     margin-top: 30px;
   }
@@ -2499,6 +2485,7 @@
     }
     .text-following{
       color:aliceblue;
+      text-align: center;
     }
   .offcanvas-menu .site-wrap {
     position: absolute;
@@ -3780,6 +3767,7 @@
       border-radius: 50%; }
   
   .breadcrumb-custom {
+    color: #ffff00;
     font-size: 15px !important; }
   
   .text-muted {
@@ -3851,4 +3839,13 @@
   .custom-pagination span {
     background: #e6e6e6;
     color: #000; }
-  
+  @media (max-width: 320px){
+	.first-content h2{
+		font-size: 20px;
+	}
+	.creator_section_wrapper h2{
+		margin-top: 50px;
+		font-size: 15px;
+		
+	}
+}
