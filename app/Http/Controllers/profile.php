@@ -116,7 +116,7 @@ class profile extends Controller
 
             $ch = curl_init();
 
-            $url = 'https://www.googleapis.com/youtube/v3/subscriptions?access_token'. $session['token'].'&part=snippet&key='. env('GOOGLE_API_KEY');
+            $url = 'https://www.googleapis.com/youtube/v3/subscriptions?'.'part=snippet&key='. env('GOOGLE_API_KEY');
 
             $dataPost['snippet'] = array(
                 'resourceId' => array(
@@ -125,9 +125,9 @@ class profile extends Controller
                 )
             );
 
-            // var_dump(json_encode($data['snippet']));
+            // var_dump(json_encode($dataPost));
             $header = array(
-                'Content-type : application/json', 
+                'Content-Type : application/json', 
                 'Accept : application/json',
                 'Authorization : Bearer ' . $session['token']
             );
@@ -137,9 +137,13 @@ class profile extends Controller
             curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($dataPost));
             curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, TRUE);
+            curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 
             $result = json_decode(curl_exec($ch), true);
             $result['httpResponseCode'] = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
+
+            // var_dump(curl_error($ch));
             curl_close($ch);
 
             // var_dump($result);
@@ -148,10 +152,13 @@ class profile extends Controller
             $kind = $result['kind'];
             // var_dump($channelId);
             if($result['httpResponseCode'] == '200'){
-                return back()->with('status-success', 'Subscribe Berhasil!');
+                sleep(2);
+                return redirect('/profile/'.$idChannel)->with('status-success', 'Subscribe Berhasil!');
             }else{
                 $error['message'] = $result['error']['message'];
-                return back()->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
+                // $error['message'] = 'Subscribe gagal!';
+                sleep(2);
+                return redirect('/profile/'.$idChannel)->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
             }
             
         }else{
@@ -184,18 +191,22 @@ class profile extends Controller
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
             curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
+            curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 
             $result = json_decode(curl_exec($ch),TRUE);
             $result['httpResponseCode'] = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
             curl_close($ch);
 
             // var_dump($result);
-            // $error = $result['error'];
+            
             if($result['httpResponseCode'] == '204'){
-                return back()->with('status-success', 'Anda telah berhenti berlangganan!' );
+                sleep(2);
+                return redirect('/profile/'.$idChannel)->with('status-success', 'Anda telah berhenti berlangganan!' );
             }else{
                 $error['message'] = $result['error']['message'];
-                return back()->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
+                // $error['message'] = 'Unsubscribe gagal!';
+                sleep(2);
+                return redirect('/profile/'.$idChannel)->with('status-error', 'Please contact us immediately about : Code '. $result['httpResponseCode'].', ' . $error['message']);
             }
         }else{
             return redirect('/redirect');
